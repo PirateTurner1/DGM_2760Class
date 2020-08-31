@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-Joe's Bed and Breakfast</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            Joe's Bed and Breakfast
+        </h1>
+        <h2>
+            Best B&B in Utah State!
+        </h2>
+    </header>
+    <main>
+        <h1 id="pageName"></h1>
+        <h2> What I have learned is...</h2>
+        <ul>
+            <li>I can Build a single and simple webpage with a header. including the main and the footer.</li>
+            <li>I can find and resize correctly an image that I have downloaded from the internet. Then, loaded it into the header using CSS. </li>
+            <li>I can use JavaScript to insert text into an HTML element.</li>
+            <li>I can use JavaScript to insert the current date into the web page.</li>
+            <li>I can style a page and organize it using css properly</li>
+            <li>I have learned how to push my code from visual studio to a GitHub repository.</li>
+            <li>I have learned how to make my final results show by deploying a complete webpage using Netlify.</li>
+        </ul>
+        <h2>
+            Today is,
+            <script>
+                let thedate = new Date()
+                document.write(thedate.toLocaleDateString())
+            </script>
+        </h2>
+        <p id="greetings"> </p>
+    </main>
+    <footer>
+        <p>Assignment for DGM 2760 by Austin Turner as instructed by Thor</p>
+    </footer>
+    <script type="text/JavaScript" src="js/main.js"></script>
+</body>
+
+</html>

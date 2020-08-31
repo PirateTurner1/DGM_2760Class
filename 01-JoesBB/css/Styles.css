@@ -1,0 +1,19 @@
+/*body h1,h2,h3,h4,h5,h6,ul,li {
+    margin: 0;
+}*/
+
+header {
+    max_width: 960px;
+    margin: 0 auto;
+    border: 1px solid blue;
+    background-image: url("../images/header.jpg");
+}
+
+h1 {
+    border: 1px solid red;
+    color: #000;
+}
+
+h2 {
+    color: #000;
+}
