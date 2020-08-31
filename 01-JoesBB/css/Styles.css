@@ -24,6 +24,7 @@ footer {
     align-items: left;
     max-width: 960px;
     margin: 0 auto;
+    background-color: darkgoldenrod;
 }
 
 h1 {
@@ -52,4 +53,8 @@ h2 {
     /*color: white;*/
     width: 80%;
     height: 90vh;
+    background-color: darkgoldenrod;
+}
+footer{
+    background-color: brown;
 }
