@@ -9,12 +9,14 @@
 
 <body>
     <header>
-        <h1>
+        <h1></h1>
+        <h2></h2>
+        <!---<h1>
             Joe's Bed and Breakfast
         </h1>
         <h2>
             Best B&B in Utah State!
-        </h2>
+        </h2>-->
     </header>
     <main>
         <h1 id="pageName"></h1>
@@ -33,6 +35,8 @@
             <script>
                 let thedate = new Date()
                 document.write(thedate.toLocaleDateString())
+                const inputval = promt("Enter your name: ");
+                document.write("Welcome: " + inputval + "to this website!");
             </script>
         </h2>
         <p id="greetings"> </p>
