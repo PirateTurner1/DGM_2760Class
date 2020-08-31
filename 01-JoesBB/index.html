@@ -8,9 +8,7 @@
 </head>
 
 <body>
-    <header>
-        <h1></h1>
-        <h2></h2>
+    <header id="company">
         <!---<h1>
             Joe's Bed and Breakfast
         </h1>
@@ -34,9 +32,10 @@
             Today is,
             <script>
                 let thedate = new Date()
-                document.write(thedate.toLocaleDateString())
-                const inputval = promt("Enter your name: ");
-                document.write("Welcome: " + inputval + "to this website!");
+                document.write(thedate.toLocaleDateString());
+
+                var name = window.prompt("what is your name?")
+                document.write(" \nHey " + name + ", Welcome to Joe's bed and Breakfast Page!")
             </script>
         </h2>
         <p id="greetings"> </p>
