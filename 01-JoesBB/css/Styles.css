@@ -10,20 +10,25 @@ header, body, p, h1, h2, h3, h4, footer{
   }
   
   html{
-   background: darkgoldenrod;
+   background:white;
+   font-family: 'Ubuntu', sans-serif;
   }
 header {
-    max_width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    max_width: 1080px;
     height: 400px;
-    margin: 0 auto;
-    /*border: 1px solid blue;*/
-    background-image: url("../images/outdoor-padio.jpg");
+    margin: 0 50px 15px 80px;
+    background-image: url("../images/Deer_valley_lodge.jpeg");
     background-repeat: no-repeat;
-    background-size: 960px 400px;
+    background-size: 1080px 400px;
     font-size: 60px;
     color: #fff;
+   padding-top: 20px;
     text-shadow: 3px 3px #000;
-    text-indent: 20px;
+    text-indent: 30px;
 }
 
 main,
@@ -34,7 +39,7 @@ footer {
     align-items: left;
     max-width: 960px;
     margin: 0 auto;
-    background-color: darkgoldenrod;
+    background-color:#593C1F;
 }
 
 h1 {
@@ -42,8 +47,8 @@ h1 {
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    /*border: 1px solid red;*/
-    color: #000;
+    color: rgb(15, 15, 100);
+    margin-bottom: 15px;
     /*font-size: 16rem;*/
 }
 
@@ -63,13 +68,16 @@ h2 {
     /*color: white;*/
     width: 80%;
     height: 90vh;
-    background-color: darkgoldenrod;
+    background-color:white;
 }
 footer{
-    background-color: brown;
-    font-size:1.25em;
+    background-color:#593C1F;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
     text-align: center;
     margin-bottom:20px;
     padding: 20px;
+    color: white;
 
 }
