@@ -1,12 +1,22 @@
-/*body h1,h2,h3,h4,h5,h6,ul,li {
-    margin: 0;
-}*/
 
+/* CSS reset */
+header, body, p, h1, h2, h3, h4, footer{
+    padding: 0; 
+    margin: 0;
+  }
+  
+  /*box model fix here*/
+  *{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  box-sizing: border-box; 
+  }
+  
+  html{
+   background: darkgoldenrod;
+  }
 header {
     max_width: 960px;
     height: 400px;
     margin: 0 auto;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     background-image: url("../images/outdoor-padio.jpg");
     background-repeat: no-repeat;
     background-size: 960px 400px;
@@ -32,7 +42,7 @@ h1 {
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     color: #000;
     /*font-size: 16rem;*/
 }
@@ -57,4 +67,9 @@ h2 {
 }
 footer{
     background-color: brown;
+    font-size:1.25em;
+    text-align: center;
+    margin-bottom:20px;
+    padding: 20px;
+
 }
