@@ -7,8 +7,9 @@ let offset = `window offset is ${window.screenX} from the left edge and ${window
 
 let myWindow = document.querySelector('#myWindow').innerText = `${windowSizes} + '\n' + ${offset}`
 }
+reDisplay()
 
-
+/*
 function reDisplay() {
     var txt = 'windows size is ' + window.innerWidth + " width by " +window.innerHeight+"tall.<br>";
     txt += 'window offset is '+ window.screenX + " from the left edge and " + window.screenY + "from the top of the display.<br>";
@@ -20,3 +21,4 @@ var txt2 = 'Document Title is ' + document.title + "<br>";
     document.getElementById("myDocument").innerHTML = txt2;
 }
 reDisplay();
+*/
