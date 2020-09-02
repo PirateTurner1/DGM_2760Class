@@ -1,0 +1,103 @@
+
+/* CSS reset */
+header, body, p, h1, h2, h3, h4, footer{
+    padding: 0; 
+    margin: 0;
+}
+  
+/*box model fix here*/
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  box-sizing: border-box; 
+}
+  
+html{
+   background:rgb(231, 231, 231);
+   font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    max_width: 1920px;
+    height: 400px;
+    margin: 0 50px 15px 80px;
+    background-image: url("../images/Deer_valley_lodge.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1440px 400px;
+    
+}
+
+main,
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color:#593C1F;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    color: rgb(15, 15, 100);
+    margin-bottom: 15px;
+    /*font-size: 16rem;*/
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    color: #000;
+    color: rgb(3, 3, 180)
+}
+
+#company {
+    color: white;
+    font-size: 3rem;
+    padding-top: 20px;
+    text-shadow: 3px 3px #000;
+    text-indent: 30px;
+    margin: 0 100px 30px 10px;
+}
+
+#slogan {
+    color: white;
+    font-size: 32px;
+    padding-top: 20px;
+    margin-left: 10px;
+    text-shadow: 3px 3px #000;
+    text-indent: 30px;
+}
+
+#pageName {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    /*color: white;*/
+    width: 80%;
+    height: 90vh;
+    background-color:rgb(231, 231, 231);
+}
+
+footer{
+    background-color:#593C1F;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom:20px;
+    padding: 20px;
+    color: white;
+}
+
+div.keepOpen { 
+    clear: both;
+}  

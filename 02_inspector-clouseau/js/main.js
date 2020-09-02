@@ -5,7 +5,10 @@ function reDisplay() {
 let windowSizes = `windows size is ${window.innerWidth} pixels wide and by ${window.innerHeight} pixels tall.`
 let offset = `window offset is ${window.screenX} from the left edge and ${window.screenY} pixels from the top of the display.`
 
-let myWindow = document.querySelector('#myWindow').innerText = `${windowSizes} + '\n' + ${offset}`
+let myWindow = document.querySelector('#myWindow').innerText = `${windowSizes} '\n' ${offset}`
+
+let myDocument = 'Document Title is ' +`${document.title}` + `this document was last updated on ${document.lastModified}` 
+let myDocument = document.querySelector("#myDocument").innerText = `${myDocument}`
 }
 reDisplay()
 
@@ -17,7 +20,7 @@ function reDisplay() {
     document.getElementById("myWindow").innerHTML = txt; 
 
 var txt2 = 'Document Title is ' + document.title + "<br>";
-    txt2 += 'this document was last updated on ' + document.lstModified + "<br>";
+    txt2 += 'this document was last updated on ' + document.lastModified + "<br>";
     document.getElementById("myDocument").innerHTML = txt2;
 }
 reDisplay();
