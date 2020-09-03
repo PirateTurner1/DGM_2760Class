@@ -3,7 +3,7 @@ document.querySelector('header > h2').innerText = "This iez Chef Inspecteor Clou
 
 function reDisplay() {
 let windowSizes = `windows size is ${window.innerWidth} pixels wide and by ${window.innerHeight} pixels tall.`
-let offset = `window offset is ${window.screenX} from the left edge and ${window.screenY} pixels from the top of the display.`
+let offset = `window offset is ${window.screenX} pixels from the left edge and ${window.screenY} pixels from the top of the display.`
 
 let myWindow = document.querySelector('#myWindow').innerText = `${windowSizes} \n ${offset}`
 

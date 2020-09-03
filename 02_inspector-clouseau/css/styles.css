@@ -19,22 +19,22 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    max-width: 1440px;
-    height: 300px;
+    max-width: 1080px;
+    height: 200px;
     margin: 0 50px 15px 60px;
     background-image: url("../images/inspector_clouseauPS.png");
     background-repeat: no-repeat;
     background-size: 1080px 200px;
     
 }
-/*
+
 main,
 footer {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: left;
-    max-width: 1920px;
+    max-width: 1080px;
     margin: 0 auto;
     background-color:#593C1F;
 }
@@ -44,9 +44,8 @@ h1 {
     flex-direction: row;
     justify-content: left;
     align-items: left;
-    color: rgb(15, 15, 100);
+    color:#644526;
     margin-bottom: 15px;
-    /*font-size: 16rem;*/
 }
 
 h2 {
@@ -54,8 +53,7 @@ h2 {
     flex-direction: row;
     justify-content: left;
     align-items: left;
-    color: #000;
-    color: rgb(3, 3, 180)
+    color: #ac7844;
 }
 
 #company {
@@ -64,14 +62,14 @@ h2 {
     padding-top: 20px;
     text-shadow: 3px 3px #000;
     text-indent: 50px;
-    margin: 0 150px 30px 10px;
+    margin: 0 170px 30px 10px;
 }
 
 #slogan {
     color: white;
     font-size: 1.75rem;
     padding-top: 20px;
-    margin-left: 90px;
+    margin-left: 130px;
     text-shadow: 3px 3px #000;
     text-indent: 30px;
 }
@@ -83,7 +81,7 @@ h2 {
     align-items: left;
     /*color: white;*/
     width: 80%;
-    height: 90vh;
+    height: 70vh;
     background-color:rgb(231, 231, 231);
 }
 
@@ -93,11 +91,12 @@ footer{
     align-items: center;
     font-size: 14px;
     text-align: center;
-    margin-bottom:20px;
+    margin: 0 0 10px 0;
+    max-width: 1920px;
     padding: 20px;
     color: white;
 }
 
 div.keepOpen { 
     clear: both;
-}  */
+}  
