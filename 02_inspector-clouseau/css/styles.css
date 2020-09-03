@@ -18,16 +18,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: left;
-    max_width: 1920px;
-    height: 400px;
-    margin: 0 50px 15px 80px;
+    align-items: center;
+    max-width: 1440px;
+    height: 300px;
+    margin: 0 50px 15px 60px;
     background-image: url("../images/inspector_clouseauPS.png");
     background-repeat: no-repeat;
-    background-size: 1440px 400px;
+    background-size: 1080px 200px;
     
 }
-
+/*
 main,
 footer {
     display: flex;
@@ -60,18 +60,18 @@ h2 {
 
 #company {
     color: white;
-    font-size: 3rem;
+    font-size: 3.25rem;
     padding-top: 20px;
     text-shadow: 3px 3px #000;
-    text-indent: 30px;
-    margin: 0 100px 30px 10px;
+    text-indent: 50px;
+    margin: 0 150px 30px 10px;
 }
 
 #slogan {
     color: white;
-    font-size: 32px;
+    font-size: 1.75rem;
     padding-top: 20px;
-    margin-left: 10px;
+    margin-left: 90px;
     text-shadow: 3px 3px #000;
     text-indent: 30px;
 }
@@ -100,4 +100,4 @@ footer{
 
 div.keepOpen { 
     clear: both;
-}  
+}  */
