@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-Joe's Bed and Breakfast</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="company"></h1>
+        <br/>
+        <h2 id="slogan"> </h2>
+    </header>
+    <main id="pageName">
+        <h1>Its a Number Guessing Game!</h1>
+        
+        <h2>What I have learned is:</h2>
+        <ul>
+            <li>I can use JavaScript to insert text into an HTML element.</li>
+            <li>I can implement functions from javascript.</li>
+            <li>I can use an inner text in java to provide the user feedback.</li>    
+            <li>I can implement a switch statement</li>
+            <li>I can dynamically load in a graphic</li>
+            <li>I can also create and append an image element from javascript</li>
+        </ul>
+        <h2>Instructions</h2>
+        <p id="instructions">In this game you get to try and guess a number between 1 and 15 in as few tries as possible.<br/>
+            you will be awarded a ribbon for your skills if you have the right number in the least amount of tries, so good luck! <br/>
+        if you would like to play again, all you have to do is refresh the page. be warned! the numbers will change.  </p>
+        </br>
+        <article class="a1">
+            <h2>Play</h2>
+            <div>
+                <input id="guessing" type="number" placeholder="number"/>
+                <button onclick="evalguess()">Guess</button>
+            </div>        
+        </article>
+        <article class="a2">
+            <h2>Tries</h2>
+            <div id="attempts">
+            </div>        
+        </article>
+
+        <article class="a3">
+            <h2>feedback</h2>
+            <div id="feedback">
+            </div>        
+        </article>
+
+        <article class="a4">
+            <h2>Awards</h2>
+            <div id="ribbons">
+            </div>        
+        </article>
+
+
+    </main>
+    <div class="keepOpen"></div>
+    <footer>
+        <p>&#64;UVU_DGM_2760 &#169; Austin Turner. </p>
+        <p>For educational purposes only by the "Pirates design, inc."</p>
+    </footer>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
