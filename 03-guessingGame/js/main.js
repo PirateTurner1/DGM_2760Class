@@ -10,5 +10,7 @@ let gamerGuess = 0
 
 function evalGuess(){
     totalGuesses += 1 
-    gamerGuess 
+    gamerGuess = document.querySelector('#guessing').nodeValue
+
+    const feedback = document.querySelector('#feedback')
 }
