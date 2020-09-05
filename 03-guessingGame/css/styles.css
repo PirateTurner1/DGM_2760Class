@@ -44,7 +44,7 @@ h1 {
     flex-direction: row;
     justify-content:flex-start;
     align-items: left;
-    color:#644526;
+    color:#4e04fc;
     margin-bottom: 15px;
 }
 
@@ -53,7 +53,7 @@ h2 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: left;
-    color: #ac7844;
+    color: #6543e2;
 }
 
 #company {
@@ -67,9 +67,9 @@ h2 {
 
 #slogan {
     color:rgb(193, 189, 214);
-    font-size: 1.75rem;
+    font-size: 2rem;
     padding-top: 20px;
-    margin-left: 30px;
+    margin-left: 40px;
     text-shadow: 3px 3px #000;
     /*text-indent: 10px;*/
 }
