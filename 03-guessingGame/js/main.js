@@ -1,9 +1,10 @@
 document.querySelector('header > h1').innerText = "The Guessing Game"
 document.querySelector('header > h2').innerText = "Loops"
-
+//document.getElementById('company').innerHTML = "Joe's Bed and Breakfast";
+//document.getElementById('slogan').innerHTML = "Best B&B in UTAH!";
 // pick a random number between 0 and 16
 
-const correct number = Math.floor(Math.random() * 15)
+const correctNumber = Math.floor(Math.random() * 15)
 
 let guessed = false
 let totalGuesses = 0
