@@ -36,6 +36,9 @@ function evalGuess(){
     document.querySelector('#attempts').innerGuesses
 
 }
+//const evalGuess = document.querySelector('#feedback') 
+//evalGuess.appendChild('#feedback')
+
 
 function giveAward() {
     console.log('congratulations!')
@@ -66,6 +69,7 @@ function giveAward() {
     const awardImage = document.createElement('img') // this creates an image element <img>
     awardImage.setAttribute('src', imagePath)
     const ribbon = document.querySelector('#ribbon')
+    let nodeList = elementNodeReference.childNodes; 
     ribbon.appendChild(awardImage)
 // only append the child if the ribbon element does not have any child nodes yet!
 // look up child nodes on mdn

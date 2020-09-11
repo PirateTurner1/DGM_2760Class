@@ -95,17 +95,17 @@ article {
     margin-bottom: 6rem;
 }
 
-
+/*
 .a1, .a2, .a3, .a4 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin: 0;
     padding: .3rem;
     background-color: white;
     font: 1rem 'Fira Sans', sans-serif;
 }
-
+*/
 /*.a1 > h2, {
     margin: .5rem;
     padding: .3rem;
@@ -122,20 +122,22 @@ article {
     margin: .2rem;
     font-size: 1rem;
 }*/
-.a1{
+article.a1{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin-bottom: 50px;
     padding: 20px;
     width: 165px;
     height: 200px;
-    background-color: azure;
+    background-color: red;
+  
 }
 .guessing {
     margin: .5rem;
     padding: .3rem;
     font-size: 1.2rem;
+    background-color: red;
 }
 .a2
 .attempts {
@@ -147,6 +149,7 @@ article {
 .feedback
 .a4
 .ribbons
+
 div.keepOpen { 
     clear: both;
 }  
