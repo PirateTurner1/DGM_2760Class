@@ -8,9 +8,9 @@ const correctNumber = Math.floor(Math.random() * 15)
 let guessed = false
 let totalGuesses = 0
 let gamerGuess = 0
-correctNumber += 1
+correctNumber += 1;
 
-//console.log( the correct number is `${correctNumber}`)
+console.log( 'the correct number is `${correctNumber}`')
 
 function evalGuess(){
     totalGuesses += 1 
@@ -43,21 +43,31 @@ function giveAward() {
         case 1:
         case 2:
         case 3:
-        console.log('blue ribbons for you!')
-        imagePath = 'images/blueribbon.jpg'
+            console.log('blue ribbons for you!')
+            imagePath = 'images/blueribbon.jpg'
         break;
         case 4:
-            console.log(' case 4 just happened!')
-            imagePath = 'images/red-ribbon.jpg'
-            break;
         case 5:
+            console.log('red ribbons for you!')
+            imagePath = 'images/red-ribbon.jpg'
+        break;
         case 6:
+        case 7:
+            console.log('yellow ribbons for you!')
             imagePath = 'images/yellow-ribbon.jpeg'
         break;
+        case 8:
+        case 9:
+        case 10:
+            console.log('sorry no ribbon for you!')
+        //do the rest here!!!
     }
 
     const awardImage = document.createElement('img') // this creates an image element <img>
     awardImage.setAttribute('src', imagePath)
     const ribbon = document.querySelector('#ribbon')
-    fibbon.appendChild(awardImage)
+    ribbon.appendChild(awardImage)
+// only append the child if the ribbon element does not have any child nodes yet!
+// look up child nodes on mdn
+
 }
