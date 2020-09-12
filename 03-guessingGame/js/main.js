@@ -3,75 +3,70 @@ document.querySelector('header > h2').innerText = "Loops"
 
 // pick a random number between 0 and 16
 
-const correctNumber = Math.floor(Math.random() * 15)
+let correctNumber = Math.floor(Math.random() * 15 + 1)
+console.log(`The correctNumber is ${correctNumber}`)
 
 let guessed = false
 let totalGuesses = 0
 let gamerGuess = 0
-correctNumber += 1;
 
-console.log( 'the correct number is `${correctNumber}`')
 
-function evalGuess(){
+// if, else statement to give feedback to the user. 
+function evalGuess() {
     totalGuesses += 1 
-    gamerGuess = document.querySelector('#guessing').Value
-    console.log(totalGuesses, gamerGuesses)
-    const feedback = document.querySelector('#feedback')
+    gamerGuess = document.querySelector('#guess').value
+    //console.log(totalGuesses, gamerGuess)
 
+    const feedback = document.querySelector('#feedback')
     if (gamerGuess == correctNumber) {
-       feedback.innerText = 'You WIN!'
-       giveAward()
-    }
-    else if (gamerGuess > correctNumber && gamerGuess < 16){
-        feedback.innerText = 'Too High, try again!'
-    }
-    else if (gamerGuess < correctNumber && gamerGuess > 0) {
-        feedback.innerText = 'Too Low, try again!'
-    }
-    else {
-        feedback.innerText = 'Please choose a number between 1-15! try again'
+        console.log(`gamerGuess is equal to correctNumber`)
+        feedback.innerText = 'You are correct! you win!'
+        giveAward()
+    } else if (gamerGuess > correctNumber && gamerGuess < 16) {
+        feedback.innerText = 'Your Guess was Too High, try again'
+    } else if (gamerGuess < correctNumber && gamerGuess > 0) {
+        feedback.innerText = 'Your Guess was Too Low, try again'
+    } else {
+        feedback.innerText = 'Please choose a number between 1 and 15 and try again!'
         totalGuesses -= 1
     }
-
-    document.querySelector('#attempts').innerGuesses
-
+        document.querySelector('#attempts').innerText = totalGuesses    
 }
-//const evalGuess = document.querySelector('#feedback') 
-//evalGuess.appendChild('#feedback')
 
-
+//giving the function to the show results to the user.
 function giveAward() {
-    console.log('congratulations!')
-    switch (totalGuesses){
+    console.log('Congratulations!')
+    let imagePath = '#'
+    switch(totalGuesses) {
         case 1:
         case 2:
-        case 3:
-            console.log('blue ribbons for you!')
-            imagePath = 'images/blueribbon.jpg'
-        break;
-        case 4:
+        case 3: 
+            imagePath = 'images/blue-ribbon.jpg'
+            break;
+        case 4: 
         case 5:
-            console.log('red ribbons for you!')
+        case 6: 
             imagePath = 'images/red-ribbon.jpg'
         break;
-        case 6:
+        default: 
+            imagePath = 'images/yellow-ribbon.jpg'
+        
+            /* looked at the instructions... though this idea was good. 
         case 7:
-            console.log('yellow ribbons for you!')
-            imagePath = 'images/yellow-ribbon.jpeg'
-        break;
         case 8:
-        case 9:
-        case 10:
-            console.log('sorry no ribbon for you!')
-        //do the rest here!!!
+        case 9:    
+            imagePath = 'images/yellow-ribbon.jpg'
+        break;
+        default: 
+            imagePath = "images/no-ribbonArt.png"*/
     }
 
-    const awardImage = document.createElement('img') // this creates an image element <img>
+    // appending the child to create the results on the display.
+    const awardImage = document.createElement('img') // this Creates an 'img' in html
     awardImage.setAttribute('src', imagePath)
     const ribbon = document.querySelector('#ribbon')
-    let nodeList = elementNodeReference.childNodes; 
     ribbon.appendChild(awardImage)
-// only append the child if the ribbon element does not have any child nodes yet!
-// look up child nodes on mdn
+    document.getElementById('buttonId').setAttribute("disabled", "disabled");
 
+    // note to self...only append child if the ribbon element does not have any child nodes yet 
 }

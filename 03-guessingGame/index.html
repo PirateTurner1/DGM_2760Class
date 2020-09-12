@@ -31,32 +31,32 @@
             you will be awarded a ribbon for your skills if you have the right number in the least amount of tries, so good luck! <br/>
         if you would like to play again, all you have to do is refresh the page. be warned! the numbers will change.  </p>
         </br>
-        <article class="a1">
-            <h2>Play</h2>
-            <div>
-                <input id="guessing" type="number" placeholder="number"/>
-                <button onclick="evalguess()"> Enter Guess</button>
-            </div>        
-        </article>
-        <article class="a2">
-            <h2>Tries</h2>
-            <div id="attempts">
-            </div>        
-        </article>
 
-        <article class="a3">
-            <h2>feedback</h2>
-            <div id="feedback">
-            </div>        
-        </article>
-
-        <article class="a4">
-            <h2>Awards</h2>
-            <div id="ribbons">
-            </div>        
-        </article>
-
-
+        <div class="articles">
+            <article class="a1">
+                <h2>Play</h2>
+                <div>
+                    <input id="guess" type="number" placeholder="number"/>
+                    <button id= "buttonId" onclick="evalGuess()">Guess</button>
+                    <!-- <p id="disable"></p> -->
+                </div>
+            </article>
+            
+            <article class="a2">
+                <h2>Tries</h2>
+                <div id="attempts"></div>
+            </article>
+    
+            <article class="a3">
+                <h2>Feedback</h2>
+                <div id="feedback"></div>
+            </article>
+    
+            <article class="a4">
+                <h2>Award</h2>
+                <div id="ribbon"></div>
+            </article>
+            </div>
     </main>
     <div class="keepOpen"></div>
     <footer>

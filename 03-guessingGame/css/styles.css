@@ -56,8 +56,10 @@ h2 {
     color: #6543e2;
 }
 
+/* putting in the top header h1-h2*/
 #company {
     color: rgb(193, 189, 214);
+    color: rgb(163, 245, 163);
     font-size: 3.25rem;
     padding-top: 20px;
     text-shadow: 3px 3px #000;
@@ -67,6 +69,7 @@ h2 {
 
 #slogan {
     color:rgb(193, 189, 214);
+    color:rgb(163, 245, 163);
     font-size: 2rem;
     padding-top: 20px;
     margin-left: 40px;
@@ -85,83 +88,106 @@ h2 {
     background-color:rgb(231, 231, 231);
 }
 
-article {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 3rem;
-    row-gap: 7rem;
-    max-width: 70%;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-}
-
-/*
-.a1, .a2, .a3, .a4 {
+/* setting the table or article*/
+.articles { 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: .3rem;
-    background-color: white;
-    font: 1rem 'Fira Sans', sans-serif;
-}
-*/
-/*.a1 > h2, {
-    margin: .5rem;
-    padding: .3rem;
-    font-size: 1.2rem;
-}*/
-
-/*.day-forecast {
-    background: right/contain content-box border-box no-repeat
-        url('/media/examples/rain.svg') white;*/
+    flex-direction: row;
 }
 
-/*.a1 > h2,
-.a1 > p {
-    margin: .2rem;
-    font-size: 1rem;
-}*/
-article.a1{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-bottom: 50px;
-    padding: 20px;
-    width: 165px;
-    height: 200px;
-    background-color: red;
-  
+main article {
+    width: 15%;
 }
-.guessing {
-    margin: .5rem;
-    padding: .3rem;
-    font-size: 1.2rem;
-    background-color: red;
+
+main article div {
+    height: 130px;
+    background-color: #fff;
+    padding-top: 10px;
+    margin-bottom: 0 auto;
 }
-.a2
-.attempts {
-    margin: .5rem;
-    padding: .3rem;
-    font-size: 1.2rem;
+
+main article.a1 {
+    width: 15%;
+    background-color: rgb(163, 245, 163);
+   
 }
-.a3
-.feedback
-.a4
-.ribbons
+
+main article.a1 h2 {
+    margin-left:15px;
+}
+
+main article.a1 input {
+    border: 1px solid black;
+    width: 50%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 1rem;
+    padding-left: 5px;
+}
+
+main article.a1 button {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(163, 245, 163);
+    width: 50%;
+    font-size: 16px;
+    color: black;
+    padding:3px;
+    margin-left:15px;
+    
+}
+
+main article.a2 {
+    width: 180px;
+    background-color: rgb(163, 245, 163);
+}
+
+main article.a2 div {
+    text-align: center;
+    font-size: 3rem;
+}
+
+main #attempts {
+    font-size: 2rem; 
+    color:black;
+    padding-right: 90px;
+}
+
+main article.a3 {
+    width: 30%;
+    background-color: rgb(163, 245, 163);
+}
+
+main #feedback {
+    font-size: 2rem;
+    color:black;
+}
+
+main article.a4 {
+    width: 11%;
+    height: 130px;
+    background-color: rgb(163, 245, 163);
+}
+
+img {
+    height: 120px;
+    width:80px;
+}
 
 div.keepOpen { 
     clear: both;
-}  
+} 
+
 footer{
+    clear: both;
     background-color:#593C1F;
     justify-content: center;
     align-items: center;
     font-size: 14px;
     text-align: center;
-    margin: 30px 0 10px 0;
+    margin: 70px 0 10px 0;
     max-width: 1920px;
     padding: 20px;
     color: white;
 }
-
