@@ -10,7 +10,6 @@ let guessed = false
 let totalGuesses = 0
 let gamerGuess = 0
 
-
 // if, else statement to give feedback to the user. 
 function evalGuess() {
     totalGuesses += 1 
