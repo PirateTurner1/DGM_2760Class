@@ -20,14 +20,14 @@ function evalGuess() {
     const feedback = document.querySelector('#feedback')
     if (gamerGuess == correctNumber) {
         console.log(`gamerGuess is equal to correctNumber`)
-        feedback.innerText = 'You are correct! you win!'
+        feedback.innerText = 'You are correct! \n You win!'
         giveAward()
     } else if (gamerGuess > correctNumber && gamerGuess < 16) {
-        feedback.innerText = 'Your Guess was Too High, try again'
+        feedback.innerText = 'Your Guess was Too High,\n try again'
     } else if (gamerGuess < correctNumber && gamerGuess > 0) {
-        feedback.innerText = 'Your Guess was Too Low, try again'
+        feedback.innerText = 'Your Guess was Too Low,\n try again'
     } else {
-        feedback.innerText = 'Please choose a number between 1 and 15 and try again!'
+        feedback.innerText = 'Please choose a number\n between 1 and 15 \n and try again!'
         totalGuesses -= 1
     }
         document.querySelector('#attempts').innerText = totalGuesses    
@@ -51,7 +51,7 @@ function giveAward() {
         default: 
             imagePath = 'images/yellow-ribbon.jpg'
         
-            /* looked at the instructions... though this idea was good. 
+        /* //i looked at the instructions... though this idea was good and does work. 
         case 7:
         case 8:
         case 9:    
