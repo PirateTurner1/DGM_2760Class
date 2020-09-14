@@ -1,0 +1,89 @@
+
+/* CSS reset */
+header, body, p, h1, h2, h3, h4, footer{
+    padding: 0; 
+    margin: 0;
+}
+  
+/*box model fix here*/
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  box-sizing: border-box; 
+}
+  
+html{
+   background:rgb(231, 231, 231);
+   font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    max-width: 1080px;
+    height: 200px;
+    margin: 0 50px 15px 60px;
+    background-image: url("../images/guessingNumbers.png");
+    background-repeat: no-repeat;
+    background-size: 1080px 200px;
+    
+}
+
+main,
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color:#593C1F;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: left;
+    color:#4e04fc;
+    margin-bottom: 15px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    color: #6543e2;
+}
+
+/* putting in the top header h1-h2*/
+#company {
+    color: rgb(193, 189, 214);
+    color: rgb(163, 245, 163);
+    font-size: 3.25rem;
+    padding-top: 20px;
+    text-shadow: 3px 3px #000;
+    text-indent: 20px;
+    margin: 0 170px 30px 10px;
+}
+
+#slogan {
+    color:rgb(193, 189, 214);
+    color:rgb(163, 245, 163);
+    font-size: 2rem;
+    padding-top: 20px;
+    margin-left: 40px;
+    text-shadow: 3px 3px #000;
+    /*text-indent: 10px;*/
+}
+
+#pageName {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    /*color: white;*/
+    width: 80%;
+    height: 70vh;
+    background-color:rgb(231, 231, 231);
+}
