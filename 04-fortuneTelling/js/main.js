@@ -11,6 +11,10 @@ function getRandomIntInclusive(min, max) {
 }
 
 let month = getRandomIntInclusive(1, 12)
+let day = getRandomIntInclusive(1, 30)
+let fate = getRandomIntInclusive(1, 5)
+
+
 function getMonthName(month) {
     let name
     switch (month) {
@@ -56,3 +60,34 @@ function getMonthName(month) {
     }
     return name
 }
+
+function getFortune(fate) {
+    let message
+    switch (fate) {
+        case 1:
+            message: 'have success today, Your in good hands!'
+            break;
+        case 2:
+            message: 'be the best you can be, Someone or something important is approaching!'
+            break;
+        case 3:
+            message: 'be grateful and not lazy for today, the details are important!'
+            break;
+        case 4:
+            message: 'know that better and more important things are yet to come your way if you keep trying! '
+            break;
+        case 5:
+            message: 'stay inside, it will be raining on everything you do!'
+            break;
+        default:
+            message = "An error with your fortune has occured. Try again."
+        break;                    
+    }
+    return message
+}
+
+const monthName = getMonthName(month);
+const fateMessage = getFortune(fate);
+
+const fortuneRevealed = `on ${monthName} ${day}, you will ${fate}`;
+document.querySelector('main p#fortune'). innerText = fortuneRevealed;
