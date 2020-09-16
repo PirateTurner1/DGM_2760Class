@@ -12,7 +12,7 @@ function getRandomIntInclusive(min, max) {
 
 let month = getRandomIntInclusive(1, 12)
 let day = getRandomIntInclusive(1, 30)
-let fate = getRandomIntInclusive(1, 5)
+let fate = getRandomIntInclusive(1, 10)
 
 
 function getMonthName(month) {
@@ -65,23 +65,38 @@ function getFortune(fate) {
     let message
     switch (fate) {
         case 1:
-            message: 'have success today, Your in good hands!'
+            message = 'have success today, Your in good hands!'
             break;
         case 2:
-            message: 'be the best you can be, Someone or something important is approaching!'
+            message = 'be the best you can be, Someone or something important is approaching!'
             break;
         case 3:
-            message: 'be grateful and not lazy for today, the details are important!'
+            message = 'be grateful and not lazy for today, the details are important!'
             break;
         case 4:
-            message: 'know that better and more important things are yet to come your way if you keep trying! '
+            message = 'know that better and more important things are yet to come your way if you keep trying! '
             break;
         case 5:
-            message: 'stay inside, it will be raining on everything you do!'
+            message = 'stay inside, it will be raining on everything you do!'
+            break;
+        case 6:
+            message = 'soon find that your eyes are bigger than your stomach!'
+            break;
+        case 7:
+            message = 'try something new!'
+            break;
+        case 8:
+            message = 'love and be loved!'
+            break;
+        case 9:
+            message = 'not need to have the strength to let go of something, but to rather understand!'
+            break;
+        case 10:
+            message = 'see that the odds are not in your favor!'
             break;
         default:
-            message = "An error with your fortune has occured. Try again."
-        break;                    
+            message = "An error with your fortune has ocurred. Try again."
+        break;                         
     }
     return message
 }
@@ -89,5 +104,6 @@ function getFortune(fate) {
 const monthName = getMonthName(month);
 const fateMessage = getFortune(fate);
 
-const fortuneRevealed = `on ${monthName} ${day}, you will ${fate}`;
-document.querySelector('main p#fortune'). innerText = fortuneRevealed;
+const fateRevealed = `On ${monthName} ${day}, you will ${fateMessage}`;
+
+document.querySelector('#fortune').innerText = fateRevealed;

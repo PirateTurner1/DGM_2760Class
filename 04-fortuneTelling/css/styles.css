@@ -22,7 +22,7 @@ header {
     max-width: 1080px;
     height: 200px;
     margin: 0 50px 15px 60px;
-    background-image: url("../images/guessingNumbers.png");
+    background-image: url("../images/fortuneCombo.png");
     background-repeat: no-repeat;
     background-size: 1080px 200px;
     
@@ -44,7 +44,7 @@ h1 {
     flex-direction: row;
     justify-content:flex-start;
     align-items: left;
-    color:#4e04fc;
+    color:#1c027a;
     margin-bottom: 15px;
 }
 
@@ -53,28 +53,30 @@ h2 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: left;
-    color: #6543e2;
+    color: #1c027a;
 }
 
 /* putting in the top header h1-h2*/
 #company {
-    color: rgb(193, 189, 214);
-    color: rgb(163, 245, 163);
+    color: rgb(123, 93, 253);
     font-size: 3.25rem;
     padding-top: 20px;
-    text-shadow: 3px 3px #000;
+    text-shadow: 3px 3px rgb(165, 164, 164);
     text-indent: 20px;
     margin: 0 170px 30px 10px;
 }
 
 #slogan {
-    color:rgb(193, 189, 214);
-    color:rgb(163, 245, 163);
+    color:rgb(123, 93, 253);
     font-size: 2rem;
     padding-top: 20px;
     margin-left: 40px;
-    text-shadow: 3px 3px #000;
+    text-shadow: 3px 3px rgb(82, 82, 82);
     /*text-indent: 10px;*/
+}
+            
+.objective {
+    list-style-type: circle;
 }
 
 #pageName {
@@ -86,4 +88,17 @@ h2 {
     width: 80%;
     height: 70vh;
     background-color:rgb(231, 231, 231);
+}
+
+footer{
+    clear: both;
+    background-color:#593C1F;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    margin: 70px 0 10px 0;
+    max-width: 1920px;
+    padding: 20px;
+    color: white;
 }
