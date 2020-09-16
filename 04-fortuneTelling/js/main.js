@@ -2,12 +2,12 @@
 document.querySelector('header > h1').innerText = "Fortune Telling"
 document.querySelector('header > h2').innerText = "Switching Statements"
 
-//giving the fortune telling.a1
+//giving the random numbers.
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor( Math.random() *(max - min + 1)) + min;
-    // The maximum is inclusive and the minimum is also inclusive.
+    // The maximum is inclusive and so is the minimum also inclusive.
 }
 
 let month = getRandomIntInclusive(1, 12)
@@ -17,7 +17,7 @@ let fate = getRandomIntInclusive(1, 10)
 
 function getMonthName(month) {
     let name
-    switch (month) {
+    switch (month) {  //this is a switch statement. 
         case 1:
             name = "January";
             break;
@@ -61,6 +61,7 @@ function getMonthName(month) {
     return name
 }
 
+// writing out the future fortunes
 function getFortune(fate) {
     let message
     switch (fate) {
@@ -100,10 +101,8 @@ function getFortune(fate) {
     }
     return message
 }
-
+// putting the string together and displaying it.
 const monthName = getMonthName(month);
 const fateMessage = getFortune(fate);
-
 const fateRevealed = `On ${monthName} ${day}, you will ${fateMessage}`;
-
 document.querySelector('#fortune').innerText = fateRevealed;
