@@ -1,11 +1,11 @@
 // giving the h1-h2 header.
-document.querySelector('header > h1').innerText = "The Arborist"
-document.querySelector('header > h2').innerText = "Events and Arrays"
+document.querySelector('header > h1').innerText = "The Arborist";
+document.querySelector('header > h2').innerText = "Events and Arrays";
 
 // the tree list.
-const trees = ['Oak', 'Pine', 'Aspen', 'Cedar', 'Bald Cypress', 'Cherry']
-const errorElement = Document.querySelector('error')
-const displayResults = document.querySelector('#displayResults')
+let trees = ['Oak', 'Pine', 'Aspen', 'Cedar', 'Bald Cypress', 'Cherry'];
+let errorElement = document.querySelector('error');
+let displayResults = document.querySelector('#displayResults');
 
 //displayResults.textContent = 'testing here right now!'
 //errorElement.textContent = 'testing here right now!'
@@ -15,12 +15,12 @@ const listTrees = () => {
     let treeList = '';
     //for {i=0; i < trees.length; i++}{}
     trees.forEach(tree =>{
-        treeList += `${tree} </br>`    
+        treeList += `${tree} </br>`;
     })
-    displayResults.textContent = `${treeList} <span> ${trees.length} elements long! </span>`
+    displayResults.textContent = `${treeList} <span> ${trees.length} elements long! </span>`;
 }
 
-listTress()
+listTress();
 
 /*
 //adding a redwood tree to the end in the old way of scripting it.

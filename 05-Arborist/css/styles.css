@@ -14,6 +14,14 @@ html{
    font-family: 'Ubuntu', sans-serif;
 }
 
+div#wrapper{
+    margin-left:170px;
+    margin-right: 150px;
+    max-width: 1080px;
+    box-shadow: 0 0 20px #444;
+    padding: 20px;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -21,7 +29,7 @@ header {
     align-items: left;
     max-width: 1080px;
     height: 300px;
-    margin: 0 50px 15px 60px;
+    margin-bottom: 15px;
     background-image: url("../images/tree_orchard.jpg");
     background-repeat: no-repeat;
     background-size: 1080px 300px;
@@ -31,7 +39,7 @@ header {
 main,
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: left;
     max-width: 1080px;
@@ -40,20 +48,21 @@ footer {
 }
 
 h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
+    /*display: flex;
+    flex-direction: column;
+    justify-content:flex-start;*/
     align-items: left;
     color:#048000;
     margin-bottom: 15px;
 }
 
 h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-start;*/
     align-items: left;
     color: #048000;
+    margin: 10px 0 5px 0;
 }
 
 /* putting in the top header h1-h2*/
@@ -94,6 +103,8 @@ h2 {
 }
 
 button {
+    /*flex-direction: column;
+    justify-content: flex-start;*/
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(163, 245, 163);
@@ -107,8 +118,8 @@ button {
 }
 
 aside {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     margin-right: 200px;
     margin-top: 80px;
 }
@@ -138,8 +149,8 @@ footer{
     align-items: center;
     font-size: 14px;
     text-align: center;
-    margin: 70px 0 10px 0;
-    /*margin-top: 140px;*/
+    /*margin: 70px 0 10px 0;*/
+    margin-top: 140px;
     max-width: 1920px;
     padding: 20px;
     color: white;
