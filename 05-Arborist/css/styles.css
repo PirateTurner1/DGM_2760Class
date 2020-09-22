@@ -20,11 +20,11 @@ header {
     justify-content: flex-start;
     align-items: left;
     max-width: 1080px;
-    height: 200px;
+    height: 300px;
     margin: 0 50px 15px 60px;
-    background-image: url("../images/fortuneCombo.png");
+    background-image: url("../images/tree_orchard.jpg");
     background-repeat: no-repeat;
-    background-size: 1080px 200px;
+    background-size: 1080px 300px;
     
 }
 
@@ -44,7 +44,7 @@ h1 {
     flex-direction: row;
     justify-content:flex-start;
     align-items: left;
-    color:#1c027a;
+    color:#048000;
     margin-bottom: 15px;
 }
 
@@ -53,25 +53,25 @@ h2 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: left;
-    color: #1c027a;
+    color: #048000;
 }
 
 /* putting in the top header h1-h2*/
 #company {
-    color: rgb(123, 93, 253);
+    color: rgb(24, 245, 4);
     font-size: 3.25rem;
     padding-top: 20px;
-    text-shadow: 3px 3px rgb(165, 164, 164);
+    text-shadow: 3px 3px rgb(54, 54, 54);
     text-indent: 20px;
     margin: 0 170px 30px 10px;
 }
 
 #slogan {
-    color:rgb(123, 93, 253);
-    font-size: 2rem;
+    color:rgb(24, 245, 4);
+    font-size: 2rem, ;
     padding-top: 20px;
     margin-left: 40px;
-    text-shadow: 3px 3px rgb(82, 82, 82);
+    text-shadow: 3px 3px rgb(27, 27, 27);
     /*text-indent: 10px;*/
 }
 
@@ -93,7 +93,7 @@ h2 {
 
 footer{
     clear: both;
-    background-color:#593C1F;
+    background-color:#552d05;
     justify-content: center;
     align-items: center;
     font-size: 14px;
