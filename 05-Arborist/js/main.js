@@ -53,3 +53,43 @@ document.querySelector('#remove_tree1').onclick = () => {
         errorElement. textContent = "dude, I can not remove the first tree! cuz, there are No TREES!"
     }
 }
+
+
+// Sort the Array from A to Z
+document.querySelector('#sortTrees').onclick = () => {
+    trees.sort()
+    listTrees()
+}
+
+// Make all the trees lower case
+document.querySelector('#lowerTrees').onclick = () => {
+    trees = trees.join(" <br>").toLowerCase()
+    trees = trees.split(" ,")
+    console.log(trees.length)
+    listTrees()
+}
+
+//Get the name of tree number 3
+document.querySelector('#showName3').onclick = () => {
+    if (trees.length > 2) {
+        let thirdTree = trees[2]
+        errorElement.textContent = thirdTree
+        listTrees()
+    } else {
+        errorElement.innerHTML = "You need a third tree in the list to get the name. <br> Add some more trees!"
+    }
+   
+}
+
+// Get the name of tree number 4
+document.querySelector('#showName4').onclick = () => {
+    if (trees.length > 3) {
+        let fourthTree = trees[3]
+        errorElement.textContent = fourthTree
+        console.log(trees.length)
+        listTrees()
+    } else {
+        errorElement.innerHTML = 'You need a fourth tree in the list to get the name. <br> Add some more trees!';
+    }
+
+}
