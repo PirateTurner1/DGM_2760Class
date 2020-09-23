@@ -17,9 +17,9 @@ html{
 div#wrapper{
     margin-left:170px;
     margin-right: 150px;
-    max-width: 1080px;
+    max-width: 1100px;
     box-shadow: 0 0 20px #444;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
@@ -27,8 +27,8 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    max-width: 1080px;
-    height: 300px;
+    max-width: 1100px;
+    max-height: 300px;
     margin-bottom: 15px;
     background-image: url("../images/tree_orchard.jpg");
     background-repeat: no-repeat;
