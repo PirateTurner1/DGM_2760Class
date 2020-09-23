@@ -76,8 +76,12 @@ document.querySelector('#remove_lastTree').onclick = () => {
 
 // Sort the Array from A to Z
 document.querySelector('#sortTrees').onclick = () => {
-    trees.sort()
-    listTrees()
+    if (trees.length > 0) {
+        trees.sort()
+        listTrees()
+    } else {
+        errorElement.textContent = "Error! No trees to sort!"
+    }
 }
 
 // Make all the trees lower case
