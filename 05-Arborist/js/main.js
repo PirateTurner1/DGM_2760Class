@@ -19,8 +19,7 @@ const listTrees = () => {
     })
     displayResults.innerHTML = `${treeList} <span> ${trees.length} elements long! </span>`;
 }
-
-listTress();
+listTrees()
 
 /*
 //adding a redwood tree to the end in the old way of scripting it.
@@ -99,7 +98,7 @@ document.querySelector('#showName3').onclick = () => {
         errorElement.textContent = thirdTree
         listTrees()
     } else {
-        errorElement.innerHTML = "You need a third tree in the list to get the name. <br> Please, Add some more trees!"
+        errorElement.innerHTML = "Error! there is no third tree. <br> Please, Add some more trees!"
     }
    
 }
@@ -112,7 +111,7 @@ document.querySelector('#showName4').onclick = () => {
         console.log(trees.length)
         listTrees()
     } else {
-        errorElement.innerHTML = 'You need a fourth tree in the list to get the name. <br> Add some more trees!';
+        errorElement.innerHTML = 'Error! there is no fourth tree. <br> Please, Add some more trees!';
     }
 
 }

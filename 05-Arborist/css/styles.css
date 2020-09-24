@@ -8,10 +8,11 @@ header, body, p, h1, h2, h3, h4, footer{
 /*box model fix here*/
 *{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  box-sizing: border-box; 
 }
-  
+ 
 html{
    background:rgb(231, 231, 231);
    font-family: 'Ubuntu', sans-serif;
+   background-color: #c2946f;
 }
 
 div#wrapper{
@@ -19,50 +20,21 @@ div#wrapper{
     margin-right: 150px;
     max-width: 1100px;
     box-shadow: 0 0 20px #444;
-    padding: 10px;
+    /*padding-inline: 100px;*/
+    background-color: white;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: left;
-    max-width: 1100px;
-    max-height: 300px;
-    margin-bottom: 15px;
+    width: 1080px;
+    height: 260px;
+    /*margin-bottom: 15px;*/
     background-image: url("../images/tree_orchard.jpg");
     background-repeat: no-repeat;
-    background-size: 1080px 300px;
-    
-}
-
-main,
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
-    max-width: 1080px;
-    margin: 0 auto;
-    background-color:#593C1F;
-}
-
-h1 {
-    /*display: flex;
-    flex-direction: column;
-    justify-content:flex-start;*/
-    align-items: left;
-    color:#048000;
-    margin-bottom: 15px;
-}
-
-h2 {
-    /*display: flex;
-    flex-direction: column;
-    justify-content: flex-start;*/
-    align-items: left;
-    color: #048000;
-    margin: 10px 0 5px 0;
+    background-size: 1029px 260px; 
 }
 
 /* putting in the top header h1-h2*/
@@ -70,7 +42,7 @@ h2 {
     color: rgb(24, 245, 4);
     font-size: 3.25rem;
     padding-top: 20px;
-    text-shadow: 3px 3px rgb(54, 54, 54);
+    text-shadow: 3px 3px rgb(39, 39, 39);
     text-indent: 20px;
     margin: 0 170px 30px 10px;
 }
@@ -80,31 +52,62 @@ h2 {
     font-size: 2rem, ;
     padding-top: 20px;
     margin-left: 40px;
-    text-shadow: 3px 3px rgb(27, 27, 27);
-    /*text-indent: 10px;*/
+    text-shadow: 3px 3px rgb(2, 2, 2);
+    text-indent: 5px;
 }
 
-/* main body stuff*/           
-.objective {
-    list-style-type: circle;
+
+/* main body stuff*/ 
+main, footer {
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    margin: 0 auto;
+    background-color:rgb(231, 231, 231);
+    clear:both;
 }
 
-#pageName {
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: left;
+    color:#048000;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    text-indent: 30px;
+}
+
+h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    /*color: white;*/
-    width: 80%;
-    height: 100vh;
+    color: #048000;
+    margin: 10px 0 5px 0;
+    text-indent: 30px;
+}
+
+         
+.objective {
+    list-style-type: circle;
+    text-indent: 40px;
+    margin-bottom: 40px;
+
+}
+
+#pageName {
+    display: grid;
+    /*height: 150vh;*/
     background-color:rgb(231, 231, 231);
-    /*margin-bottom: 80px;*/
+    margin-bottom: 80px;
     clear: both;
 }
 
+
 button {
-    /*flex-direction: column;
-    justify-content: flex-start;*/
+    display: block;
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(163, 245, 163);
@@ -112,44 +115,45 @@ button {
     font-size: 16px;
     color: black;
     padding:3px;
-    margin-left:15px;
+    margin-left:31px;
     margin-bottom: 5px;
+}
+
+main aside {
+    display: grid;
+    float: left;
     
 }
-
-aside {
-    /*display: flex;
-    flex-direction: column;*/
-    margin-right: 200px;
-    margin-top: 80px;
-}
-
-#displayResults {
+    
+main div #displayResults {
     background-color: lightgreen;
-    padding-right: 140px;
-    padding: 10px;
-    margin-right: 150px;
+    margin-left: 2%;
+    padding: .2em 4%;
+    line-height: 150%;
+    }
 }
-#displayResults span {
+
+main div #displayResults span {
     color: red;
 }
 
-#error {
-    background-color: yellow;
+main div #error {
+    background-color: rgb(135, 255, 65);
     padding-right: 140px;
     padding: 10px;
-
-}
-
+    margin-left: 2%;
+}  
 
 footer{
-    clear: both;
-    background-color:#552d05;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:#552d05;
     font-size: 14px;
     text-align: center;
-    /*margin: 70px 0 10px 0;*/
+    margin: 70px 0 10px 0;
     margin-top: 140px;
     max-width: 1920px;
     padding: 20px;
