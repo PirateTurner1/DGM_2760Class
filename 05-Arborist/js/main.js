@@ -72,8 +72,6 @@ document.querySelector('#remove_lastTree').onclick = () => {
     }
 }
 
-
-
 // Sort the Array from A to Z
 document.querySelector('#sortTrees').onclick = () => {
     if (trees.length > 0) {
@@ -86,17 +84,17 @@ document.querySelector('#sortTrees').onclick = () => {
 
 // Make all the trees lower case
 document.querySelector('#lowerTrees').onclick = () => {
-        if (trees.length > 0) {
-            var sorted = [];
-            for (var i = 0; i < trees.length; i++) { //also, learned this method from python class
-                sorted.push(trees[i].toLowerCase());//this is what worked best!
-                trees.splice(i, 1, sorted[i])
-            }
-            sorted.sort();
-            listTrees()    
-}else {
-    errorElement.innerHTML = "Error! can not lower Case!"
-}
+    if (trees.length > 0) {
+        var sorted = [];
+        for (var i = 0; i < trees.length; i++) { //also, learned this method from python class
+            sorted.push(trees[i].toLowerCase());//this is what worked best!
+            trees.splice(i, 1, sorted[i])
+        }
+        sorted.sort();
+        listTrees()    
+    }else {
+        errorElement.innerHTML = "Error! can not lower Case!"
+    }
 }
 
 //Get the name of tree number 3
