@@ -59,11 +59,10 @@ header {
 
 /* main body stuff*/ 
 main, footer {
-    display: block;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
-    margin: 0 auto;
+    /*display: block;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+    /*margin: 0 auto;*/
     background-color:rgb(231, 231, 231);
     clear:both;
 }
@@ -99,11 +98,11 @@ h2 {
 
 #pageName {
     display: block;
-    /*height: 150vh;*/
+    height: 760px;
     background-color:rgb(231, 231, 231);
-    margin-bottom: 80px;
     clear: both;
 }
+    
 
 
 button {
@@ -128,44 +127,44 @@ article {
 aside {
     float: left;
     width: 40%; 
-    text-align: center;
+    text-align: justify;
     background-color:rgb(231, 231, 231);
+    padding-right: 50px;
     
-}
-    
-main div #displayResults {
-    background-color: lightgreen;
-    margin-left: 2%;
-    padding: .2em 4%;
-    line-height: 150%;
-    
-    }
 }
 
-main div #displayResults span {
+    
+#displayResults {
+    background-color: lightgreen;
+    margin-left: 10px;
+    padding: .2em 4%;
+    line-height: 150%; 
+}
+
+#displayResults span {
     color: red;
 }
 
-main div #error {
-    background-color: rgb(135, 255, 65);
+#error {
+    /*background-color: rgb(135, 255, 65);*/
     padding-right: 140px;
     padding: 10px;
-    margin-left: 2%;
     color: red;
 }  
 
 footer{
     height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+   /* justify-content: center;*/
+    /*align-items: center;*/
     background-color:#552d05;
     font-size: 14px;
     text-align: center;
-    margin: 70px 0 10px 0;
-    margin-top: 140px;
+    /*margin: 70px 0 10px 0;*/
+    /*margin-top: 40px;*/
     max-width: 1920px;
     padding: 20px;
+    /*margin-bottom: 370px;*/
     color: white;
 }

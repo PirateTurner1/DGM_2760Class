@@ -4,8 +4,9 @@ document.querySelector('header > h2').innerText = "Events and Arrays";
 
 // the tree list.
 const trees = ['Oak', 'Pine', 'Aspen', 'Cedar', 'Bald Cypress', 'Cherry', 'Apple'];
-const errorElement = document.querySelector('error');
+const errorElement = document.querySelector('#error');
 const displayResults = document.querySelector('#displayResults');
+
 
 //displayResults.textContent = 'testing here right now!'
 //errorElement.textContent = 'testing here right now!'
@@ -49,25 +50,25 @@ document.querySelector('#remove_tree1').onclick = () => {
         trees.shift();
         listTrees();
     }else {
-        errorElement.textContent = "Error! No more trees to be removed!";
+        errorElement.innerHTML = "Error! No more trees to be removed!";
     }
 }
 
 document.querySelector('#remove_tree2').onclick = () => {
     if(trees.length > 1) {
-        trees.splice(1,1);
+        trees.splice(1,1);//hey, i just realized i learned this method from a python class.
         listTrees();
     }else {
-        errorElement.textContent = "Error! No more other trees to be removed!";
+        errorElement.innerHTML = "Error! No more other trees to be removed!";
     }
 }
 
 document.querySelector('#remove_lastTree').onclick = () => {
-    if(trees.length > 1) {
-        trees.splice(1,1);
+    if(trees.length > 0) {
+        trees.pop();
         listTrees();
     }else {
-        errorElement.textContent = "Error! No more other trees to be removed!";
+        errorElement.innerHTML = "Error! No more other trees to be removed!";
     }
 }
 
@@ -79,26 +80,34 @@ document.querySelector('#sortTrees').onclick = () => {
         trees.sort()
         listTrees()
     } else {
-        errorElement.textContent = "Error! No trees to sort!"
+        errorElement.innerHTML = "Error! No trees to sort!"
     }
 }
 
 // Make all the trees lower case
-document.querySelector('#lowerTrees').onclick = () => {
-    trees = trees.join(" <br>").toLowerCase()
-    trees = trees.split(" ,")
-    console.log(trees.length)
-    listTrees()
+document.querySelector('#lowerTrees').onclick = () => {
+        if (trees.length > 0) {
+            var sorted = [];
+            for (var i = 0; i < trees.length; i++) { //also, learned this method from python class
+                sorted.push(trees[i].toLowerCase());//this is what worked best!
+                trees.splice(i, 1, sorted[i])
+            }
+            sorted.sort();
+            listTrees()    
+}else {
+    errorElement.innerHTML = "Error! can not lower Case!"
+}
 }
 
 //Get the name of tree number 3
 document.querySelector('#showName3').onclick = () => {
     if (trees.length > 2) {
-        let thirdTree = trees[2]
-        errorElement.textContent = thirdTree
-        listTrees()
+        let thirdTree = trees[2];
+        errorElement.textContent = thirdTree;
+        console.log(trees.length);
+        listTrees();
     } else {
-        errorElement.innerHTML = "Error! there is no third tree. <br> Please, Add some more trees!"
+        errorElement.textContent = "Error! there is no third tree. Please, Add some more trees!"
     }
    
 }
@@ -111,7 +120,7 @@ document.querySelector('#showName4').onclick = () => {
         console.log(trees.length)
         listTrees()
     } else {
-        errorElement.innerHTML = 'Error! there is no fourth tree. <br> Please, Add some more trees!';
+        errorElement.textContent = 'Error! there is no fourth tree. Please, Add some more trees!';
     }
 
 }
