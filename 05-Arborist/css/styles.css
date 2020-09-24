@@ -119,9 +119,17 @@ button {
     margin-bottom: 5px;
 }
 
-main aside {
-    display: grid;
+article {
     float: left;
+    width: 60%;
+    background-color:rgb(231, 231, 231);
+}
+
+aside {
+    float: left;
+    width: 40%; 
+    text-align: center;
+    background-color:rgb(231, 231, 231);
     
 }
     
@@ -130,6 +138,7 @@ main div #displayResults {
     margin-left: 2%;
     padding: .2em 4%;
     line-height: 150%;
+    
     }
 }
 
@@ -142,6 +151,7 @@ main div #error {
     padding-right: 140px;
     padding: 10px;
     margin-left: 2%;
+    color: red;
 }  
 
 footer{

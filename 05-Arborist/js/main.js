@@ -17,7 +17,7 @@ const listTrees = () => {
     trees.forEach(tree => {
         treeList += `${tree} </br>`;
     })
-    displayResults.innerHTML = `${treeList} <span> ${trees.length} elements long! </span>`;
+    displayResults.innerHTML = `${treeList} <br><span> ${trees.length} elements long! </span>`;
 }
 listTrees()
 
