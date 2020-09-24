@@ -98,7 +98,7 @@ h2 {
 }
 
 #pageName {
-    display: grid;
+    display: block;
     /*height: 150vh;*/
     background-color:rgb(231, 231, 231);
     margin-bottom: 80px;
