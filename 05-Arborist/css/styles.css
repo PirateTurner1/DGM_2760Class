@@ -20,7 +20,6 @@ div#wrapper{
     margin-right: 150px;
     max-width: 1100px;
     box-shadow: 0 0 20px #444;
-    /*padding-inline: 100px;*/
     background-color: white;
 }
 
@@ -31,7 +30,6 @@ header {
     align-items: left;
     width: 1080px;
     height: 260px;
-    /*margin-bottom: 15px;*/
     background-image: url("../images/tree_orchard.jpg");
     background-repeat: no-repeat;
     background-size: 1029px 260px; 
@@ -56,13 +54,8 @@ header {
     text-indent: 5px;
 }
 
-
 /* main body stuff*/ 
 main, footer {
-    /*display: block;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-start;*/
-    /*margin: 0 auto;*/
     background-color:rgb(231, 231, 231);
     clear:both;
 }
@@ -87,8 +80,7 @@ h2 {
     margin: 10px 0 5px 0;
     text-indent: 30px;
 }
-
-         
+       
 .objective {
     list-style-type: circle;
     text-indent: 40px;
@@ -103,8 +95,6 @@ h2 {
     clear: both;
 }
     
-
-
 button {
     display: block;
     border: 1px solid black;
@@ -153,17 +143,10 @@ aside {
 
 footer{
     height: 70px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-   /* justify-content: center;*/
-    /*align-items: center;*/
     background-color:#552d05;
     font-size: 14px;
     text-align: center;
-    /*margin: 70px 0 10px 0;*/
-    /*margin-top: 40px;*/
     max-width: 1920px;
     padding: 20px;
-    /*margin-bottom: 370px;*/
     color: white;
 }
