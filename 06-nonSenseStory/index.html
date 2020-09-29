@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>05 The Arborist</title>
+    <title>06 Nonsense Story</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
@@ -17,19 +17,38 @@
         </header>
 
         <main id="pageName">
-            <h1>The Arborist</h1>
-            <h2>What I have learned is:</h2>
+            <h1 id = "head1"></h1>
+    
+            <h2 id = "head2"></h2>
 
             <ul class = "objective">
                 <li>I can extract text from the user as an html element.</li>
                 <li>I can convert a string into an array.</li>
-                <li>I can create and manipulate values in an array using JavaScript.</li>
-                <li>I can implement an error message while checking on values.</li>
+                <li>I can create and manipulate values or elements in an array using JavaScript.</li>
+                <li>I can escape string characters from JavaScript</li>
                 <li>I can build a string concatenation.</li>
                 <li>I can change a string into all lowercase in JavaScript.</li>
             </ul>
-
-
+            <article>
+                <h2>Seven Nouns</h2>
+                <textarea id = "nouns"> 
+                    /*fill in your own 7 nouns here*/
+                </textarea> 
+            </article>
+            <article>
+                <h2>Three Adjectives</h2>
+                <textarea id = "Adjectives"> 
+                    /*fill in your own 3 Adjectives here*/
+                </textarea> 
+            </article>
+            <article>
+                <h2>Three Verbs</h2>
+                <textarea id = "nouns"> 
+                    /*fill in your own 3 verbs here*/
+                </textarea> 
+            </article>
+            <button onclick="tellStory()">Tell the story</button>
+            <p id = "story"></p>
         </main>    
         <div class="keepOpen"></div>
         <footer>
