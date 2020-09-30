@@ -2,7 +2,7 @@
 document.querySelector('header > h1').innerText = "The Nonsense Story";
 document.querySelector('header > h2').innerText = "String Manipulation";
 //giving the second h1-h2 header
-document.getElementById('head1').innerHTML = "The Tail of...";
+document.getElementById('head1').innerHTML = "The Tail of The Tortoise And The Hair.";
 document.getElementById('head2').innerHTML = "What I have learned is:";
 //putting the nouns, verbs, and adjectives in order.
 function tellStory() {

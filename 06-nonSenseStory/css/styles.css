@@ -30,14 +30,14 @@ header {
     align-items: left;
     width: 1080px;
     height: 260px;
-    background-image: url("../images/tree_orchard.jpg");
+    background-image: url("../images/Rabbit-Turtle-story.jpg");
     background-repeat: no-repeat;
     background-size: 873px 260px; 
 }
 
 /* putting in the top header h1-h2*/
 #company {
-    color: rgb(24, 245, 4);
+    color: rgb(248, 252, 1);
     font-size: 3.25rem;
     padding-top: 20px;
     text-shadow: 3px 3px rgb(39, 39, 39);
@@ -46,7 +46,7 @@ header {
 }
 
 #slogan {
-    color:rgb(24, 245, 4);
+    color:rgb(255, 251, 6);
     font-size: 2rem, ;
     padding-top: 20px;
     margin-left: 40px;
@@ -80,7 +80,17 @@ h2 {
     margin: 10px 0 5px 0;
     text-indent: 30px;
 }
-       
+ 
+h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    color: #048000;
+    margin: 10px 0 5px 0;
+    text-indent: 30px;
+}
+
 .objective {
     list-style-type: circle;
     text-indent: 40px;
