@@ -117,3 +117,25 @@ button {
     margin-left:31px;
     margin-bottom: 5px;
 }
+/* setting the table or article*/
+.articles { 
+    display: flex;
+    flex-direction: row;
+}
+
+main article {
+    width: 15%;
+}
+
+main article div {
+    height: 130px;
+    background-color: #fff;
+    padding-top: 10px;
+    margin-bottom: 0 auto;
+}
+
+main article.a1 {
+    width: 15%;
+    background-color: rgb(163, 245, 163);
+   
+}
