@@ -7,10 +7,6 @@ const trees = ['Oak', 'Pine', 'Aspen', 'Cedar', 'Bald Cypress', 'Cherry', 'Apple
 const errorElement = document.querySelector('#error');
 const displayResults = document.querySelector('#displayResults');
 
-
-//displayResults.textContent = 'testing here right now!'
-//errorElement.textContent = 'testing here right now!'
-
 //displaying the list of trees inside the div.
 const listTrees = () => {
     let treeList = '';
@@ -56,7 +52,7 @@ document.querySelector('#remove_tree1').onclick = () => {
 
 document.querySelector('#remove_tree2').onclick = () => {
     if(trees.length > 1) {
-        trees.splice(1,1);//hey, i just realized i learned this method from a python class.
+        trees.splice(1,1);//note to self, remember this from python.
         listTrees();
     }else {
         errorElement.innerHTML = "Error! No more other trees to be removed!";
@@ -86,7 +82,7 @@ document.querySelector('#sortTrees').onclick = () => {
 document.querySelector('#lowerTrees').onclick = () => {
     if (trees.length > 0) {
         var sorted = [];
-        for (var i = 0; i < trees.length; i++) { //also, learned this method from python class
+        for (var i = 0; i < trees.length; i++) { //note to self, remember this from python.
             sorted.push(trees[i].toLowerCase());//this is what worked best!
             trees.splice(i, 1, sorted[i])
         }
@@ -107,7 +103,6 @@ document.querySelector('#showName3').onclick = () => {
     } else {
         errorElement.textContent = "Error! there is no third tree. Please, Add some more trees!"
     }
-   
 }
 
 // Get the name of tree number 4
@@ -120,5 +115,4 @@ document.querySelector('#showName4').onclick = () => {
     } else {
         errorElement.textContent = 'Error! there is no fourth tree. Please, Add some more trees!';
     }
-
 }
