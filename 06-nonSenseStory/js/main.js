@@ -8,21 +8,19 @@ document.getElementById('head2').innerHTML = "What I have learned is:";
 
 //putting the nouns, verbs, and adjectives in order.
 function tellStory() {
-    let nounString = document.getElementById('nouns').value.toLowerCase().split(/\s+|\n/);
-        //nounString.toLowerCase();
-        //nounArray = nounString.split(/\s+/);
-
+    let nounString = document.querySelector('#nouns').value
+    nounString.toLowerCase()
+    nounArray = nounString.split(/\s+/)
+    
     let adjectiveString = document.querySelector('#adjectives').value
-        adjectiveString.toLowerCase()
-        adjectiveArray = adjectiveString.split(/\s+/)
+    adjectiveString.toLowerCase()
+    adjectiveArray = adjectiveString.split(/\s+/)
 
     let verbString = document.querySelector('#verbs').value
-        verbString.toLowerCase()
-        verbArray = verbString.split(/\s+/)
+    verbString.toLowerCase()
+    verbArray = verbString.split(/\s+/)
 
-
-    //telling the story
-    let storyArea = `Once upon a time, There was a speedy ${nounArray[0]} who bragged about how fast he could ${verbArray[0]}. 
+    let storyArea = `Once upon a time, There was a speedy ${nounArray[1]} who bragged about how fast he could ${verbArray[0]}. 
     Tired of hearing him boast, the ${adjectiveArray[0]} ${nounArray[1]}, challenged him to a race.
     All the ${nounArray[2]}s in the forest gathered to watch.
     ${nounArray[0]} ${verbArray[0]} down the road for a while and then paused to rest.
@@ -35,9 +33,10 @@ function tellStory() {
     After that, the ${nounArray} always reminded himself,
     'Do not brag about your lightning pace, for ${verbArray[0]} and ${adjectiveArray[0]} wins the race!'`
     
-    document.querySelector('#storyP').textContent = storyArea
+    document.querySelector('#story').textContent = storyArea
 
 }
+
 document.querySelector('#tellStoryButton').onclick = tellStory
 
 console.log()

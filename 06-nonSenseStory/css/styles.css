@@ -101,9 +101,11 @@ h3 {
 
 #pageName {
     display: block;
-    height: 760px;
+    height: 860px;
     background-color:rgb(231, 231, 231);
     clear: both;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 button {
@@ -121,62 +123,64 @@ button {
 
 
 /* setting the table or article*/
-main .articles { 
+.articles { 
     display: flex;
     flex-direction: row;
     text-align: left;
-    margin-left: 15px;
+    margin-left: 15px; 
 }
 
-main article {
+article {
     width: 30%;
     margin-left: 15px;
 }
 
-
-main article.a1 {
+article.a1 {
     width: 250px;
-    height: 200px;
-    background-color: rgb(163, 245, 163);
+    height: 200px; 
 }
 
-main article.a1 h2 {
-    margin-left:15px;
+article.a1 h2 {
+    margin-left:10px;
     font-size: 20px;
     text-align: left;
+    color: black;
 }
 
-main article.a2 {
+article.a2 {
     width: 250px;
     height: 200px;
-    background-color: blue;
-}
-
-main article.a2 h2 {
-    margin-left:15px;
-    font-size: 20px;
-    text-align: left;
     
 }
 
-main article.a3 {
-    width: 250px;
-    height: 200px;
-    background-color: red;
+article.a2 h2 {
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    
 }
 
-main article.textArea {
+article.a3 {
+    width: 250px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+article.a3 h2 {
+    margin-left:10px;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    
+}
+
+article.textArea {
     width: 250px;
     height: 250px;
-    margin-left: 30px;
+    margin-left: 50px;
+    padding: 0 200px 0 100px;
 }
 
-main article.a3 h2 {
-    margin-left:15px;
-    font-size: 20px;
-    text-align: left;
-    
-}
 
 footer{
     height: 70px;
