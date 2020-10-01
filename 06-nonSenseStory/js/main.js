@@ -8,9 +8,9 @@ document.getElementById('head2').innerHTML = "What I have learned is:";
 
 //putting the nouns, verbs, and adjectives in order.
 function tellStory() {
-    let nounString = document.querySelector('#nouns').value
-        nounString.toLowerCase()
-        nounArray = nounString.split(/\s+/)
+    let nounString = document.getElementById('nouns').value.toLowerCase().split(/\s+|\n/);
+        //nounString.toLowerCase();
+        //nounArray = nounString.split(/\s+/);
 
     let adjectiveString = document.querySelector('#adjectives').value
         adjectiveString.toLowerCase()

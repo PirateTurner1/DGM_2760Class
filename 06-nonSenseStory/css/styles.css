@@ -32,7 +32,7 @@ header {
     height: 260px;
     background-image: url("../images/Rabbit-Turtle-story.jpg");
     background-repeat: no-repeat;
-    background-size: 873px 260px; 
+    background-size: 1030px 260px; 
 }
 
 /* putting in the top header h1-h2*/
@@ -125,16 +125,18 @@ main .articles {
     display: flex;
     flex-direction: row;
     text-align: left;
+    margin-left: 15px;
 }
 
 main article {
     width: 30%;
+    margin-left: 15px;
 }
 
 
 main article.a1 {
     width: 250px;
-    height: 250px;
+    height: 200px;
     background-color: rgb(163, 245, 163);
 }
 
@@ -146,20 +148,20 @@ main article.a1 h2 {
 
 main article.a2 {
     width: 250px;
-    height: 250px;
+    height: 200px;
     background-color: blue;
 }
 
 main article.a2 h2 {
     margin-left:15px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     
 }
 
 main article.a3 {
     width: 250px;
-    height: 250px;
+    height: 200px;
     background-color: red;
 }
 
@@ -167,6 +169,13 @@ main article.textArea {
     width: 250px;
     height: 250px;
     margin-left: 30px;
+}
+
+main article.a3 h2 {
+    margin-left:15px;
+    font-size: 20px;
+    text-align: left;
+    
 }
 
 footer{
