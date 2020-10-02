@@ -101,7 +101,7 @@ h3 {
 
 #pageName {
     display: block;
-    height: 860px;
+    height: 880px;
     background-color:rgb(231, 231, 231);
     clear: both;
     padding-left: 15px;
@@ -174,11 +174,10 @@ article.a3 h2 {
     
 }
 
-article.textArea {
-    width: 250px;
-    height: 250px;
-    margin-left: 50px;
-    padding: 0 200px 0 100px;
+textarea {
+    width: 200px;
+    height: 150px;    
+    background-color: rgb(255, 255, 254);
 }
 
 
