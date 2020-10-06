@@ -1,0 +1,82 @@
+/* CSS reset */
+header, body, p, h1, h2, h3, h4, footer{
+    padding: 0; 
+    margin: 0;
+}
+  
+/*box model fix here*/
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  box-sizing: border-box; 
+}
+ 
+html{
+   background:rgb(231, 231, 231);
+   font-family: 'Ubuntu', sans-serif;
+   background-color: #c2946f;
+}
+
+div#wrapper{
+    margin-left:170px;
+    margin-right: 150px;
+    max-width: 1100px;
+    box-shadow: 0 0 20px #444;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 1080px;
+    height: 260px;
+    background-image: url("../images/pizzaPic.jpg");
+    background-repeat: no-repeat;
+    background-size: 1030px 260px; 
+}
+
+/* putting in the top header h1-h2*/
+#company {
+    color: rgb(248, 252, 1);
+    font-size: 3.25rem;
+    padding-top: 20px;
+    text-shadow: 3px 3px rgb(39, 39, 39);
+    text-indent: 20px;
+    margin: 0 170px 30px 10px;
+}
+
+#slogan {
+    color:rgb(255, 251, 6);
+    font-size: 2rem, ;
+    padding-top: 20px;
+    margin-left: 40px;
+    text-shadow: 3px 3px rgb(2, 2, 2);
+    text-indent: 5px;
+}
+
+/* main body stuff*/ 
+main, footer {
+    background-color:rgb(231, 231, 231);
+    clear:both;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: left;
+    color:#048000;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    text-indent: 30px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    color: #048000;
+    margin: 10px 0 5px 0;
+    text-indent: 30px;
+    font-size: 26px;
+}
