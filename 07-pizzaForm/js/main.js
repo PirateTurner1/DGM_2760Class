@@ -1,4 +1,10 @@
+// giving the top h1-h2 header.
+document.querySelector('header > h1').innerText = "Pizza Emporium";
+document.querySelector('header > h2').innerText = "Literal Objects";
 
+//giving the body an h1-h2 header.
+document.getElementById('head1').innerHTML = "The Pizza  Order Form";
+document.getElementById('head2').innerHTML = "What I have learned is:";
 
 // setting the doe, i mean the crust
 const pizza = {
@@ -25,29 +31,19 @@ const pizza = {
     }
 };// do this same thing for toppings and all others that have a pizza thing to it. 
 
-
-
-
 let thinButton = document.querySelector('#thin')
 thinButton.addEventListener('click', function(){
     return pizza.crust = 'thin';
 })
-
+/*
 let buildButton = document.querySelector('#build') 
 buildButton.addEventListener('click, pizza.buildPizza ) 
 document.querySelector('#build')
-
+*/
 //what we would like to see as a code...
 document.querySelector('#thin').addEventListener('click', () => pizza.crust = 'thin')
-document.querySelector('thick').addEventListener('click', ()=> pizza.crust = 'thick')    
+document.querySelector('#thick').addEventListener('click', ()=> pizza.crust = 'thick')    
 // do the same with toppings and size
 document.querySelector('#build').addEventListener('click', pizza.buildPizza)
 //hook up the shoppingList method, call it here. 
 
-// giving the top h1-h2 header.
-document.querySelector('header > h1').innerText = "Pizza Emporium";
-document.querySelector('header > h2').innerText = "Literal Objects";
-
-//giving the body an h1-h2 header.
-document.getElementById('head1').innerHTML = "Pizza Order Form";
-document.getElementById('head2').innerHTML = "What I have learned is:";
