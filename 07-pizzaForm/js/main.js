@@ -1,5 +1,5 @@
 // giving the top h1-h2 header.
-document.querySelector('header > h1').innerText = "Pizza Emporium"
+document.getElementById('#company').innerHTML = "Pizza Emporium";
 document.querySelector('header > h2').innerText = "Literal Objects"
 
 //giving the body an h1-h2 header.
@@ -8,9 +8,10 @@ document.getElementById('head2').innerHTML = "What I have learned is:";
 
 // setting the doe, i mean the crust
 const pizza = {
-    crust: 'thin'
-    size: 'small'
-    toppings: 'pepperoni'
+    crust: 'thin',
+    size: 'large',
+    toppings: 'pepperoni',
+    veggieToppings: 'pineapple';
 
     buildPizza: function () {
         console.log ('building the pizza has been called for you!');
