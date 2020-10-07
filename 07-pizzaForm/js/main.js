@@ -1,10 +1,4 @@
-// giving the top h1-h2 header.
-document.getElementById('#company').innerText = "Pizza Emporium";
-document.querySelector('header > h2').innerText = "Literal Objects";
 
-//giving the body an h1-h2 header.
-document.getElementById('head1').innerHTML = "Pizza Order Form";
-document.getElementById('head2').innerHTML = "What I have learned is:";
 
 // setting the doe, i mean the crust
 const pizza = {
@@ -49,3 +43,11 @@ document.querySelector('thick').addEventListener('click', ()=> pizza.crust = 'th
 // do the same with toppings and size
 document.querySelector('#build').addEventListener('click', pizza.buildPizza)
 //hook up the shoppingList method, call it here. 
+
+// giving the top h1-h2 header.
+document.querySelector('header > h1').innerText = "Pizza Emporium";
+document.querySelector('header > h2').innerText = "Literal Objects";
+
+//giving the body an h1-h2 header.
+document.getElementById('head1').innerHTML = "Pizza Order Form";
+document.getElementById('head2').innerHTML = "What I have learned is:";
