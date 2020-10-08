@@ -36,7 +36,7 @@ header {
 
 /* putting in the top header h1-h2*/
 #company {
-    color: rgb(250, 250, 250);
+    color: rgb(255, 251, 0);
     font-size: 3.25rem;
     padding-top: 20px;
     text-shadow: 3px 3px rgb(39, 39, 39);
@@ -45,7 +45,7 @@ header {
 }
 
 #slogan {
-    color:rgb(250, 250, 250);
+    color:rgb(255, 251, 0);
     font-size: 2rem, ;
     padding-top: 20px;
     margin-left: 40px;
@@ -64,7 +64,7 @@ h1 {
     flex-direction: column;
     justify-content:flex-start;
     align-items: left;
-    color:#048000;
+    color:#0126f5;
     padding-top: 20px;
     /*margin-bottom: 15px;*/
     /*text-indent: 10px;*/
@@ -95,7 +95,7 @@ h3 {
 
 .objective {
     list-style-type: circle;
-    text-indent: 40px;
+    text-indent: 10px;
     margin-bottom: 40px;
 
 }
@@ -115,11 +115,12 @@ button {
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(163, 245, 163);
-    width: 95px;
+    width: 125px;
     font-size: 16px;
     color: black;
-    padding: 0.3rem;;
-    margin-left:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:6px;
     margin-bottom: 20px;
     margin-top: 5px;
 }

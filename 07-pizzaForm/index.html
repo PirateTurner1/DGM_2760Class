@@ -20,16 +20,17 @@
             <br>
             <h2 id = "head2"></h2>
             <ul class = "objective">
+                <li>I can build buttons to let the user change properties.</li>
                 <li>I can create an object Literal with properties and methods.</li>
-                <li>I can set the properties inside an object.</li>
                 <li>I can access the properties and methods from an object.</li>
-                <li>I can show feedback to the user.</li>
-                <li>I can use the math operators.</li>
-                <li>I can use a template literal.</li>
+                <li>I can set the properties inside an object.</li>
+                <li>I can use math operators.</li>
+                <li>I can show feedback to the user of the results being run.</li>
+                
             </ul>
             <h2>Click on the items in the menu to order your pizza</h2>
             <h3>Size Options</h3>
-            <input type="radio" id="small" name="size" value="small">
+            <input type="radio" id="small" name="size" value="small" checked>
             <label for="small">Small</label>
             <input type="radio" id="medium" name="size" value="medium">
             <label for="medium">Medium</label>
@@ -42,7 +43,7 @@
             <label for="thin">Thin</label>
             <input type="radio" id="thick" name="crust" value="thick">
             <label for="thick">Thick</label>
-            <input type="radio" id="stuffed" name="crust" value="stuffed">
+            <input type="radio" id="stuffed" name="crust" value="stuffed" checked>
             <label for="stuffed">Stuffed</label>
             <br>
 
@@ -53,12 +54,12 @@
             <label for="pepperoni">Pepperoni</label>
             <input type="radio" id="ham" name="topping" value="ham">
             <label for="ham">Ham</label>
-            <input type="radio" id="chicken" name="topping" value="chicken" >
+            <input type="radio" id="chicken" name="topping" value="chicken" checked>
             <label for="chicken">Chicken</label>
             <br>
 
             <h3>Veggie Topping Options</h3>
-            <input type="radio" id="pineapple" name="veggieTopping" value="pineapple" >
+            <input type="radio" id="pineapple" name="veggieTopping" value="pineapple" checked>
             <label for="pineapple">Pineapple</label>
             <input type="radio" id="peppers" name="veggieTopping" value="peppers" >
             <label for="peppers">Peppers</label>
@@ -73,7 +74,7 @@
             <button id="build">Build Pizza</button>
  
             <h3>Shopping List</h3>
-            <button id="shopping">Shopping</button>
+            <button id="shopping">Your Receipt</button>
 
             <h3>Your Message</h3>
             <p id="feedback"></p>
