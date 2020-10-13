@@ -10,27 +10,35 @@ document.getElementById('head2').innerHTML = "What I have learned is:";
 const question = {
     stem: "who is buried in Grant's Tomb?",
     option1: "Tom",
-    option2: "Grant",
-    option3: "Austin",
+    option2: "Austin",
+    option3: "Grant",
     option4: "John",
-    correct: 2,
-    display: () => {
-        document.querySelector('#stem').textContent = question.stem
-        // display the question to the user of options here!
-        //set the ui or div element here. 
+    correct: 3,
 
+    // display the question to the user!
+    display: () => {
+        document.querySelector('#stem').textContent = question.stem;
+        document.querySelector('#answer1').textContent = question.option1;
+        document.querySelector('#answer2').textContent = question.option2;
+        document.querySelector('#answer3').textContent = question.option3;
+        document.querySelector('#answer4').textContent = question.option4;
     },
+
     check: (userChoice) => {
         //use button click events and button listeners
         if (userChoice === question.correct) {
-            document.querySelector(".feedback").textContent = "YOU ARE CORRECT!"
-        } //else...
+            document.querySelector('.feedback').textContent = "YOU ARE CORRECT! "
+        }else {
+            document.querySelector('.feedback').textContent = "You are INCORRECT! There is only one answer!"
+        }
     
     }
 }
 
+//we know that the answer is 3 from Above.
 document.querySelector('#answer1').addEventListener('click', () => question.check(1))
-  //we know that the answer is 2 from Above.
 document.querySelector('#answer2').addEventListener('click', () => question.check(2))
+document.querySelector('#answer3').addEventListener('click', () => question.check(3))
+document.querySelector('#answer4').addEventListener('click', () => question.check(4))
 
-question.display
+question.display()
