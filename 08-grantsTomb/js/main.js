@@ -8,14 +8,14 @@ document.getElementById('head2').innerHTML = "What I have learned is:";
 
 
 const question = {
-    stem: "who is buried in Grant's Tomb?",
+    stem: "Who is Buried in Grant's Tomb?",
     option1: "Tom",
     option2: "Austin",
     option3: "Grant",
     option4: "John",
     correct: 3,
 
-    // display the question to the user!
+    // displaying the question to the user!
     display: () => {
         document.querySelector('#stem').textContent = question.stem;
         document.querySelector('#answer1').textContent = question.option1;
@@ -23,9 +23,9 @@ const question = {
         document.querySelector('#answer3').textContent = question.option3;
         document.querySelector('#answer4').textContent = question.option4;
     },
-
+    
+    //using button click events and button listeners.
     check: (userChoice) => {
-        //use button click events and button listeners
         if (userChoice === question.correct) {
             document.querySelector('.feedback').textContent = "YOU ARE CORRECT! "
         }else {
@@ -41,4 +41,5 @@ document.querySelector('#answer2').addEventListener('click', () => question.chec
 document.querySelector('#answer3').addEventListener('click', () => question.check(3))
 document.querySelector('#answer4').addEventListener('click', () => question.check(4))
 
+//putting everything on to html
 question.display()
