@@ -29,7 +29,7 @@ const question = {
         if (userChoice === question.correct) {
             document.querySelector('.feedback').textContent = "YOU ARE CORRECT! "
         }else {
-            document.querySelector('.feedback').textContent = "You are INCORRECT! There is only one answer!"
+            document.querySelector('.feedback').textContent = "You are INCORRECT! There is only one right answer!"
         }
     
     }
