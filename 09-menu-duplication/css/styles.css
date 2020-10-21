@@ -7,13 +7,14 @@ body {
 }
 
 header, nav, main, footer {
-	max-width: 960px;
+	max-width: 996px;
 	margin: 0 auto;
 }
 
 header {
 	background-image: url("../images/carDuplicates.jpg");
-	height: 200px;
+    height: 200px;
+    
 	
 }
 
@@ -41,16 +42,56 @@ header h2 {
     padding-bottom: 50px;
 }
 
-footer{
-    height: 70px;
-    background-color:#552d05;
-    font-size: 14px;
-    text-align: center;
-    max-width: 1920px;
-    padding: 20px;
-    color: white;
+main h1 {
+	color:#334455;
+	padding: 1rem 0 0 2%;
 }
 
+main h2 {
+	color: #21494e;
+	padding: .6rem 0 0 2%;
+}
+
+main p {
+    padding: .2rem 0 0 2%; 
+    line-height: 150%;
+    padding-right: 10px;
+}
+
+main ul {
+    margin: 0;
+}
+
+.objective {
+	list-style-image: url("../images/check.png");
+    margin-left: 30px;
+    padding-left: 20px;
+    text-indent: 10px;
+}
+
+main img.myPhoto {
+    width: 75%;
+}
+
+footer {
+    background-color: #742124;
+    height: 70px;
+    font-size: 14px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	clear: both; 
+}
+
+footer p {
+	text-align: center;
+	color: white;
+	padding: .5rem 0;
+}
+
+.keepOpen{
+	clear:both;
+}
 
 
 /*NAVIGATION FOR THE TABLET AND DESKTOP*/
@@ -84,12 +125,13 @@ footer{
     
     nav {
         background-color: #742124;
+        padding-left: 50px;
     }
     
     nav ul#primaryNavigation {
-		margin-left: 2%;
+		/*margin-left: 2%;*/
 		list-style: none;
-		margin:0;
+		/*margin:0;*/
 		padding: 0;
     }
     
@@ -117,40 +159,42 @@ footer{
 
 
 
-
 /*NAVIGATION FOR THE Small Screen*/
 @media only screen and (max-width: 600px) {
 	nav#smallNavArea {
         display: block; 
     }
-    
-    ul#primaryNavigation {
+
+	ul#primaryNavigation {
         display: none;
     }
 
 	nav#smallNavArea {
-        height:100vh;
+        height:60vh; 
         background-color: #adadad;
     }
-    
-    nav#smallNavArea ul {
+
+	nav#smallNavArea ul  {
         padding: .5em 0;
     }
-    
-    nav#smallNavArea ul li {
+
+	nav#smallNavArea ul li {
         list-style: none;
     }
-    
-    nav#smallNavArea ul li a {
+
+	nav#smallNavArea ul li a {
 		display: block;
 		list-style: none;
 		margin: .4em 2%;
-		padding: .6rem 0;
+        padding: .6rem 0;
 		text-align: center;
 		text-decoration: none;
-		color: #FFF;
+		color: rgb(187, 22, 22);
 		background-color: rgba(0,0,0,0.2);
-	}
+    }
+    nav#smallNavArea ul li a:hover {
+        color: yellow;
+    }
 
 	div.smallMenuLink {
 		display: block;
@@ -158,47 +202,11 @@ footer{
 	}
 	div.smallMenuLink a {
 		display: block;
-		color: #FFF;
+		color: rgb(255, 0, 0);
 		text-decoration: none;
 		padding: .6rem;
-	}
+    }
+    div.smallMenuLink a:hover {
+        color: yellow;
+    }
 } /* end of small navigation*/
-
-
-
-
-
-main h1 {
-	color:#334455;
-	padding: 1rem 0 0 2%;
-}
-main h2 {
-	color: #21494e;
-	padding: .6rem 0 0 2%;
-}
-main p {padding: .2rem 0 0 2%; line-height: 150%;}
-
-main ul {margin: 0;}
-main ul.objectives li {
-	list-style-image: url("../images/check.png");
-	margin-left: 3rem;
-
-}
-
-
-main img.myPhoto {width: 75%;}
-
-footer {
-	background-color: #742124;
-	clear: both; 
-}
-footer p {
-	text-align: center;
-	color: white;
-	padding: .5rem 0;
-}
-
-
-.keepOpen{
-	clear:both;
-}
