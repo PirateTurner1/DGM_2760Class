@@ -14,8 +14,6 @@ header, nav, main, footer {
 header {
 	background-image: url("../images/carDuplicates.jpg");
     height: 200px;
-    
-	
 }
 
 header h1 {
@@ -156,9 +154,6 @@ footer p {
 } /* end of Desktop navigation*/
 
 
-
-
-
 /*NAVIGATION FOR THE Small Screen*/
 @media only screen and (max-width: 600px) {
 	nav#smallNavArea {
@@ -192,6 +187,7 @@ footer p {
 		color: rgb(187, 22, 22);
 		background-color: rgba(0,0,0,0.2);
     }
+
     nav#smallNavArea ul li a:hover {
         color: yellow;
     }
@@ -199,13 +195,15 @@ footer p {
 	div.smallMenuLink {
 		display: block;
 		background-color: #742124;
-	}
+    }
+    
 	div.smallMenuLink a {
 		display: block;
 		color: rgb(255, 0, 0);
 		text-decoration: none;
 		padding: .6rem;
     }
+
     div.smallMenuLink a:hover {
         color: yellow;
     }
