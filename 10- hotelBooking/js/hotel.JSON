@@ -1,0 +1,13 @@
+{
+    "hotels": {
+        {
+        "name": "marriott",
+        "rooms": "58",
+        "gym": "yes",
+        "roomTypes": [" King", "queen", "double bed", "suite"],
+        "address": "258 Broad Street",
+        "picture": "",
+        }, 
+    },
+    {}
+}
