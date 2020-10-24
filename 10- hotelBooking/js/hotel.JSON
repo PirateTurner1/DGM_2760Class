@@ -1,13 +1,34 @@
 {
-    "hotels": {
+    "hotels": [
         {
-        "name": "marriott",
+        "name": "Marriott",
         "rooms": "58",
-        "gym": "yes",
-        "roomTypes": [" King", "queen", "double bed", "suite"],
+        "gym": "Yes",
+        "pool": "Yes",
+        "roomTypes": ["King", "queen", "double bed", "suite"],
         "address": "258 Broad Street",
         "picture": "",
-        }, 
-    },
-    {}
+        },
+        
+        {
+            "name": "Sheraton",
+            "rooms": "30",
+            "gym": "No",
+            "pool": "No",
+            "roomTypes": ["king", "queen", "double bed"],
+            "address": "23 Main Plaza Dr.",
+            "picture": "",
+        },
+
+        {
+            "name": "Hilton",
+            "rooms": "42",
+            "gym": "yes",
+            "pool": "Yes",
+            "roomTypes": ["king", "queen", "double bed", "accessible"],
+            "address": "10 long view Road",
+            "picture": "",
+        }   
+    ]
+
 }
