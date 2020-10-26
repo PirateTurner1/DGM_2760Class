@@ -28,7 +28,27 @@
             "roomTypes": ["king", "queen", "double bed", "accessible"],
             "address": "10 long view Road",
             "picture": "",
-        }   
+        },   
+        
+        {
+            "name": "Best Western",
+            "rooms": "48",
+            "gym": "yes",
+            "pool": "Yes",
+            "roomTypes": ["king", "queen", "double bed"],
+            "address": "1234 Anaheim Ave Road",
+            "picture": "",
+        },
+
+        {
+            "name": "Holiday Inn",
+            "rooms": "38",
+            "gym": "no",
+            "pool": "Under Maintenance",
+            "roomTypes": ["queen", "double bed", "accessible"],
+            "address": "348 Kingston Ave",
+            "picture": "",
+        },
     ]
 
 }
