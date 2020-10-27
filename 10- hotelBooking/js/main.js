@@ -39,7 +39,10 @@ function hotelInfo(event) {
     document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`
     document.querySelector('#gym').textContent = `${hotelChoice.gym}`
     document.querySelector('#pools').textContent = `${hotelChoice.pools}`
-    document.querySelector('#type').textContent = `${hotelChoice.RoomTypes[0]}`
+    document.querySelector('#type').textContent = `${hotelChoice.roomTypes[0] + ' ' + hotelChoice.roomTypes[1] + ' ' + hotelChoice.roomTypes[2] + ' ' + hotelChoice.roomTypes[3]}`
+    
+    let picturePlacement = document.querySelector('#picture')
+    picturePlacement.src = `${hotelChoice.picture}`
 
     let picture = document.querySelector('#picture')
     
