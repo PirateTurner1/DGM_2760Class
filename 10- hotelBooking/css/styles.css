@@ -39,7 +39,7 @@ header {
     color: rgb(255, 251, 0);
     font-size: 3.25rem;
     padding-top: 20px;
-    text-shadow: 3px 3px rgb(151, 151, 151);
+    text-shadow: 3px 3px rgb(5, 5, 5);
     text-indent: 20px;
     margin: 0 170px 30px 10px;
 }
@@ -49,7 +49,7 @@ header {
     font-size: 2rem, ;
     padding-top: 20px;
     margin-left: 40px;
-    text-shadow: 3px 3px rgb(151, 151, 151);
+    text-shadow: 3px 3px rgb(5, 5, 5);
     text-indent: 5px;
 }
 
@@ -91,12 +91,63 @@ h2 {
 
 #pageName {
     display: block;
-    height: 580px;
+    height: 950px;
     background-color:rgb(231, 231, 231);
     clear: both;
     padding-left: 30px;
     padding-right: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
+}
+.hotels {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    max-width: 800px;
+    background-color: #00fc3f;
+    padding: 10px;
+    
+    
+}
+
+.hotels a:link {
+    color: black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-left: 19px;
+    padding-right: 18px;
+}
+
+.hotels a:hover {
+    color: brown;
+    
+}
+
+#picture {
+    /*display: block;*/
+    /*float:left;*/
+    width: 350px;
+    height: 180px;
+    justify-content: right;
+}
+
+.p h3 {
+    border: solid 1px rgb(36, 172, 2);
+    border-radius: 3rem;
+    padding: 12px;
+    padding-left: 10px;
+    width: 280px;
+    background-color: rgb(36, 172, 2);
+    margin: 8px;
+}
+
+.p p {
+    border: solid 1px rgb(36, 172, 2);
+    border-radius: 3rem;
+    padding: 12px;
+    padding-left: 10px;
+    max-width: 280px;
+    background-color: rgb(36, 172, 2);
+    margin: 8px;
 }
 
 footer{

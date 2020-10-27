@@ -10,7 +10,7 @@ document.getElementById('head2').innerHTML = "What I have learned is:";
 // promises, call backs, asyncs, awaits are similar in ways... please read!
 async function getHotelData() {
     try {
-        const response = await fetch('../hotel.JSON')
+        const response = await fetch('js/hotel.JSON')
         return await response.json() //this returns the JSON objects
 
     }catch (error) {
@@ -32,7 +32,7 @@ function hotelInfo(event) {
         return event.target.id === hotel.name.toLowerCase()
     })
 
-    console.log(Event.target.id)
+    //console.log(Event.target.id)
 
     document.querySelector('#hotelName').textContent = `${hotelChoice.name} Hotel`
     document.querySelector('#address').textContent = `${hotelChoice.address}`

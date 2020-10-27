@@ -4,51 +4,51 @@
         "name": "Marriott",
         "rooms": "58",
         "gym": "Yes",
-        "pool": "Yes",
-        "roomTypes": ["King", "queen", "double bed", "suite"],
+        "pools": "Yes",
+        "roomTypes": ["King,", "queen,", "double bed,", "suite"],
         "address": "258 Broad Street",
-        "picture": "images/marriottKing.jpg",
+        "picture": "images/marriottKing.jpg"
         },
         
         {
             "name": "Sheraton",
             "rooms": "30",
             "gym": "No",
-            "pool": "No",
-            "roomTypes": ["king", "queen", "double bed"],
+            "pools": "No",
+            "roomTypes": ["king,", "queen,", "double bed", "suite"],
             "address": "23 Main Plaza Dr.",
-            "picture": "images/sheratonRoom.jpg",
+            "picture": "images/sheratonRoom.jpg"
         },
 
         {
             "name": "Hilton",
             "rooms": "42",
             "gym": "yes",
-            "pool": "Yes",
-            "roomTypes": ["king", "queen", "double bed", "accessible"],
+            "pools": "Yes",
+            "roomTypes": ["king,", "queen,", "double bed,", "accessible"],
             "address": "10 long view Road",
-            "picture": "images/HiltonInns.jpg",
+            "picture": "images/HiltonInns.jpg"
         },   
         
         {
-            "name": "Best Western",
+            "name": "BestWestern",
             "rooms": "48",
             "gym": "yes",
-            "pool": "Yes",
-            "roomTypes": ["king", "queen", "double bed"],
+            "pools": "Yes",
+            "roomTypes": ["king,", "queen,", "double bed"],
             "address": "1234 Anaheim Ave Road",
-            "picture": "images/bestWestern1.jpg",
+            "picture": "images/BestWestern.jpg"
         },
 
         {
-            "name": "Holiday Inn",
+            "name": "HolidayInn",
             "rooms": "38",
             "gym": "no",
-            "pool": "!Under Maintenance!",
-            "roomTypes": ["queen", "double bed", "accessible"],
+            "pools": "!Under Maintenance!",
+            "roomTypes": ["queen,", "double bed,", "accessible"],
             "address": "348 Kingston Ave",
-            "picture": "images/holidayInn1.jpg",
-        },
+            "picture": "images/holidayInn1.jpg"
+        }
     ]
 
 }
