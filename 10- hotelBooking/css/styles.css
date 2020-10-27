@@ -102,11 +102,9 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    max-width: 800px;
+    max-width: 447px;
     background-color: #00fc3f;
     padding: 10px;
-    
-    
 }
 
 .hotels a:link {
@@ -134,7 +132,7 @@ h2 {
     border: solid 1px rgb(36, 172, 2);
     border-radius: 3rem;
     padding: 12px;
-    padding-left: 10px;
+    padding-left: 15px;
     width: 280px;
     background-color: rgb(36, 172, 2);
     margin: 8px;
@@ -144,7 +142,7 @@ h2 {
     border: solid 1px rgb(36, 172, 2);
     border-radius: 3rem;
     padding: 12px;
-    padding-left: 10px;
+    padding-left: 15px;
     max-width: 280px;
     background-color: rgb(36, 172, 2);
     margin: 8px;

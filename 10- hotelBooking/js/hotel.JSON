@@ -31,7 +31,7 @@
         },   
         
         {
-            "name": "BestWestern",
+            "name": "bestWestern",
             "rooms": "48",
             "gym": "yes",
             "pools": "Yes",
@@ -41,7 +41,7 @@
         },
 
         {
-            "name": "HolidayInn",
+            "name": "holidayInn",
             "rooms": "38",
             "gym": "no",
             "pools": "!Under Maintenance!",
