@@ -7,7 +7,7 @@
         "pool": "Yes",
         "roomTypes": ["King", "queen", "double bed", "suite"],
         "address": "258 Broad Street",
-        "picture": "",
+        "picture": "images/marriottKing.jpg",
         },
         
         {
@@ -17,7 +17,7 @@
             "pool": "No",
             "roomTypes": ["king", "queen", "double bed"],
             "address": "23 Main Plaza Dr.",
-            "picture": "",
+            "picture": "images/sheratonRoom.jpg",
         },
 
         {
@@ -27,7 +27,7 @@
             "pool": "Yes",
             "roomTypes": ["king", "queen", "double bed", "accessible"],
             "address": "10 long view Road",
-            "picture": "",
+            "picture": "images/HiltonInns.jpg",
         },   
         
         {
@@ -37,17 +37,17 @@
             "pool": "Yes",
             "roomTypes": ["king", "queen", "double bed"],
             "address": "1234 Anaheim Ave Road",
-            "picture": "",
+            "picture": "images/bestWestern1.jpg",
         },
 
         {
             "name": "Holiday Inn",
             "rooms": "38",
             "gym": "no",
-            "pool": "Under Maintenance",
+            "pool": "!Under Maintenance!",
             "roomTypes": ["queen", "double bed", "accessible"],
             "address": "348 Kingston Ave",
-            "picture": "",
+            "picture": "images/holidayInn1.jpg",
         },
     ]
 

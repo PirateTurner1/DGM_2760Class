@@ -29,7 +29,7 @@ console.log(selectAll)
 
 function hotelInfo(event) {
     let hotelChoice = hotelData.hotels.find(hotel => {
-        return event.target.id === hotelData.name.tolowercase()
+        return event.target.id === hotel.name.toLowerCase()
     })
 
     console.log(Event.target.id)
