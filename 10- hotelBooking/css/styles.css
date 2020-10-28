@@ -66,8 +66,6 @@ h1 {
     align-items: left;
     color:black;
     padding-top: 20px;
-    /*margin-bottom: 15px;*/
-    /*text-indent: 10px;*/
 }
 
 h2 {
@@ -84,9 +82,7 @@ h2 {
 
 .objective {
     list-style-type: circle;
-    text-indent: 10px;
     margin-bottom: 40px;
-
 }
 
 #pageName {
@@ -101,31 +97,38 @@ h2 {
 .hotels {
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
-    max-width: 447px;
+    list-style: none;
+    width: 741px;
+    max-height: 40px;
     background-color: #00fc3f;
-    padding: 10px;
+    border-radius: 10px; 
+    padding: 10px 0 10px 0;
 }
 
-.hotels a:link {
+.hotels a{
     color: black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    padding-left: 19px;
-    padding-right: 18px;
-}
-
-.hotels a:hover {
-    color: brown;
+    height: 46px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 2px solid rgb(231, 231, 231);
+    border-right: 2px solid rgb(231, 231, 231); 
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     
 }
 
+.hotels a:hover {
+    color: rgb(251, 255, 21);
+    background-color:#00fc3f;
+}
+
 #picture {
-    /*display: block;*/
-    /*float:left;*/
     width: 350px;
     height: 180px;
-    justify-content: right;
 }
 
 .p h3 {
@@ -133,8 +136,8 @@ h2 {
     border-radius: 3rem;
     padding: 12px;
     padding-left: 15px;
-    width: 280px;
-    background-color: rgb(36, 172, 2);
+    width: 330px;
+    background-color:  #00fc3f;
     margin: 8px;
 }
 
@@ -143,8 +146,8 @@ h2 {
     border-radius: 3rem;
     padding: 12px;
     padding-left: 15px;
-    max-width: 280px;
-    background-color: rgb(36, 172, 2);
+    width: 330px;
+    background-color:  #00fc3f;
     margin: 8px;
 }
 

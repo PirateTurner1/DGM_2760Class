@@ -5,49 +5,49 @@
         "rooms": "58",
         "gym": "Yes",
         "pools": "Yes",
-        "roomTypes": ["King,", "queen,", "double bed,", "suite"],
+        "roomTypes": ["King, ", "Queen, ", "Double, ", "Suite"],
         "address": "258 Broad Street",
         "picture": "images/marriottKing.jpg"
         },
         
         {
-            "name": "Sheraton",
-            "rooms": "30",
-            "gym": "No",
-            "pools": "No",
-            "roomTypes": ["king,", "queen,", "double bed", "suite"],
-            "address": "23 Main Plaza Dr.",
-            "picture": "images/sheratonRoom.jpg"
+        "name": "Sheraton",
+        "rooms": "30",
+        "gym": "No",
+        "pools": "No",
+        "roomTypes": ["King, ", "Queen, ", "Double, ", "Suite"],
+        "address": "23 Main Plaza Dr.",
+        "picture": "images/sheratonRoom.jpg"
         },
 
         {
-            "name": "Hilton",
-            "rooms": "42",
-            "gym": "yes",
-            "pools": "Yes",
-            "roomTypes": ["king,", "queen,", "double bed,", "accessible"],
-            "address": "10 long view Road",
-            "picture": "images/HiltonInns.jpg"
+        "name": "Hilton",
+        "rooms": "42",
+        "gym": "yes",
+        "pools": "Yes",
+        "roomTypes": ["King, ", "Queen, ", "Double, ", "Accessible"],
+        "address": "10 long view Road",
+        "picture": "images/HiltonInns.jpg"
         },   
         
         {
-            "name": "bestWestern",
-            "rooms": "48",
-            "gym": "yes",
-            "pools": "Yes",
-            "roomTypes": ["king,", "queen,", "double bed"],
-            "address": "1234 Anaheim Ave Road",
-            "picture": "images/BestWestern.jpg"
+        "name": "Hampton",
+        "rooms": "48",
+        "gym": "yes",
+        "pools": "Yes",
+        "roomTypes": ["King, ", "Queen ,", "Double", ""],
+        "address": "1234 Anaheim Ave Road",
+        "picture": "images/HamptonImage.jpg"
         },
 
         {
-            "name": "holidayInn",
-            "rooms": "38",
-            "gym": "no",
-            "pools": "!Under Maintenance!",
-            "roomTypes": ["queen,", "double bed,", "accessible"],
-            "address": "348 Kingston Ave",
-            "picture": "images/holidayInn1.jpg"
+        "name": "Wyndham",
+        "rooms": "38",
+        "gym": "no",
+        "pools": "Under Maintenance",
+        "roomTypes": ["Queen, ", "Double, ", "Accessible", ""],
+        "address": "348 Kingston Ave",
+        "picture": "images/wyndham.jpg"
         }
     ]
 
