@@ -131,16 +131,6 @@ h2 {
     height: 180px;
 }
 
-.p h3 {
-    border: solid 1px rgb(36, 172, 2);
-    border-radius: 3rem;
-    padding: 12px;
-    padding-left: 15px;
-    width: 330px;
-    background-color:  #00fc3f;
-    margin: 8px;
-}
-
 .p p {
     border: solid 1px rgb(36, 172, 2);
     border-radius: 3rem;
