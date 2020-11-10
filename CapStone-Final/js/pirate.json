@@ -6,6 +6,7 @@
         "crewNumber": "10",
         "killed": "no, set out to find love and family.",
         "cursed": ["Davy Jones, ", "heart"],
+        "playing": "you are now playing against Captain Will Turner",
         "picture": "images/pirateTurner.jpg"
         },
         
@@ -15,6 +16,7 @@
         "crewNumber": "18",
         "killed": "no, we fight to run away.",
         "cursed": ["Rum, ","Money"],
+        "playing": "you are now playing against Captain Jack Sparrow",
         "picture": "images/Jack-Sparrow-1.jpg"
         },
 
@@ -24,6 +26,7 @@
         "crewNumber": "80",
         "killed": "no, set out for the Sparrow.",
         "cursed": ["Greed, ", "Power"],
+        "playing": "you are now playing against Commodore James Norrington",
         "picture": "images/norrington.jpg"
         },   
         
@@ -33,6 +36,7 @@
         "crewNumber": "25",
         "killed": "Yes, anyone with his gold.",
         "cursed": ["Aztec Gold, ", "Bone Living Dead"],
+        "playing": "you are now playing against Captain Hector Barbarossa",
         "picture": "images/Barbossa-1.jpg"
         },
 
@@ -42,6 +46,7 @@
         "crewNumber": "60",
         "killed": "Yes, anyone at sea.",
         "cursed": ["Love, ", "calypso"],
+        "playing": "you are now playing against Evil Captain Davy Jones",
         "picture": "images/Davy-Jones.jpg"
         },
 
@@ -51,6 +56,7 @@
         "crewNumber": "40",
         "killed": "Yes, stolen ships and put in a bottle.",
         "cursed": ["Witches Sword, ", "Selfish Pride"],
+        "playing": "you are now playing against Evil Captain Black Beard",
         "picture": "images/Blackbeard.jpg"
         },
 
@@ -60,6 +66,7 @@
         "crewNumber": "60",
         "killed": "Yes, just bad pirates.",
         "cursed": ["Devil's Triangle, ","Compass"],
+        "playing": "you are now playing against Evil Spanish Captain Armando Salazar ",
         "picture": "images/Armando-Salazar.jpg"
         }
 
