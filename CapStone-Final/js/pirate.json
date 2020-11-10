@@ -37,7 +37,7 @@
         },
 
         {
-        "name": "DavyJones",
+        "name": "Davy_Jones",
         "shipName": "Dutchman",
         "crewNumber": "60",
         "killed": "Yes anyone at sea",
@@ -46,12 +46,12 @@
         },
 
         {
-        "name": "BlackBeard",
+        "name": "Blackbeard",
         "shipName": "Queen Anne's Revenge",
         "crewNumber": "40",
         "killed": "Yes",
         "cursed": ["Witches Sword", "Selfish Pride"],
-        "picture": "images/wyndham.jpg"
+        "picture": "images/Blackbeard.jpg"
         },
 
         {
