@@ -4,8 +4,8 @@
         "name": "Turner",
         "shipName": "Dutchman",
         "crewNumber": "10",
-        "killed": "no",
-        "cursed": ["Davy Jones", "heart"],
+        "killed": "no, set out to find love and family.",
+        "cursed": ["Davy Jones, ", "heart"],
         "picture": "images/pirateTurner.jpg"
         },
         
@@ -13,8 +13,8 @@
         "name": "Sparrow",
         "shipName": "Black Pearl",
         "crewNumber": "18",
-        "killed": "no",
-        "cursed": ["Rum","Money"],
+        "killed": "no, we fight to run away.",
+        "cursed": ["Rum, ","Money"],
         "picture": "images/Jack-Sparrow-1.jpg"
         },
 
@@ -22,8 +22,8 @@
         "name": "Norrington",
         "shipName": "Royal Navy",
         "crewNumber": "80",
-        "killed": "Yes",
-        "cursed": ["Greed", "Power"],
+        "killed": "no, set out for the Sparrow.",
+        "cursed": ["Greed, ", "Power"],
         "picture": "images/norrington.jpg"
         },   
         
@@ -31,8 +31,8 @@
         "name": "Barbarossa",
         "shipName": "Black Pearl",
         "crewNumber": "25",
-        "killed": "Yes",
-        "cursed": ["Aztec Gold", "Bone Living Dead"],
+        "killed": "Yes, anyone with his gold.",
+        "cursed": ["Aztec Gold, ", "Bone Living Dead"],
         "picture": "images/Barbossa-1.jpg"
         },
 
@@ -40,8 +40,8 @@
         "name": "Davy_Jones",
         "shipName": "Dutchman",
         "crewNumber": "60",
-        "killed": "Yes anyone at sea",
-        "cursed": ["Love", "calypso"],
+        "killed": "Yes, anyone at sea.",
+        "cursed": ["Love, ", "calypso"],
         "picture": "images/Davy-Jones.jpg"
         },
 
@@ -49,8 +49,8 @@
         "name": "Blackbeard",
         "shipName": "Queen Anne's Revenge",
         "crewNumber": "40",
-        "killed": "Yes",
-        "cursed": ["Witches Sword", "Selfish Pride"],
+        "killed": "Yes, stolen ships and put in a bottle.",
+        "cursed": ["Witches Sword, ", "Selfish Pride"],
         "picture": "images/Blackbeard.jpg"
         },
 
@@ -58,8 +58,8 @@
         "name": "Salazar",
         "shipName": "Silent Mary",
         "crewNumber": "60",
-        "killed": "Yes, just bad pirates",
-        "cursed": ["King, ", "Queen, ", "Double, ", "Suite"],
+        "killed": "Yes, just bad pirates.",
+        "cursed": ["Devil's Triangle, ","Compass"],
         "picture": "images/Armando-Salazar.jpg"
         }
 

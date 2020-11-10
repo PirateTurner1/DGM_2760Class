@@ -98,7 +98,8 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    width: 841px;
+    font-size: 16px;
+    width: 940px;
     max-height: 40px;
     background-color: #00fc3f;
     border-radius: 10px; 
@@ -110,7 +111,7 @@ h2 {
     height: 46px;
     list-style: none;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     border-left: 2px solid rgb(231, 231, 231);
     border-right: 2px solid rgb(231, 231, 231); 
@@ -122,18 +123,23 @@ h2 {
 
 #picture {
     width: 350px;
-    height: 180px;
+    height: 224px;
+    float:left;
+    
 }
 
 .p p {
     float:left;
+    width: 40%;
     border: solid 1px rgb(36, 172, 2);
     border-radius: 3rem;
     padding: 12px;
     padding-left: 15px;
-    width: 330px;
+    /*width: 330px;*/
+    font-size: 14px;
     background-color:  #00fc3f;
-    margin: 8px;
+    margin-left: 15px;
+    margin-bottom: 8px;
 }
 
 
