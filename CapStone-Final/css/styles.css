@@ -145,10 +145,10 @@ h2 {
 }
 
 main p {
-    /*float:left;*/
-    /*width: 60%;
+    float:left;
+    /*width: 80%;*/
     padding: 12px;
-    /*padding-left: 5px;*/
+    padding-left: 5px;
     font-size: 18px;
     padding-top: 20px;
     margin-left: 5px;

@@ -111,7 +111,7 @@ function giveAward() {
 
 
     // appending the child to create the results on the display.
-    /*const awardImage = document.createElement('img') // this Creates an 'img' in html
+    const awardImage = document.createElement('img') // this Creates an 'img' in html
     awardImage.setAttribute('src', imagePath)
     const ribbon = document.querySelector('#ribbon')
     ribbon.appendChild(awardImage)
