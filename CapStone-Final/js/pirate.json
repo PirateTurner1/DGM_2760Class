@@ -1,0 +1,69 @@
+{
+    "pirates": [
+        {
+        "name": "Turner",
+        "shipName": "Dutchman",
+        "crewNumber": "10",
+        "killed": "no",
+        "cursed": ["Davy Jones", "heart"],
+        "picture": "images/pirateTurner.jpg"
+        },
+        
+        {
+        "name": "Sparrow",
+        "shipName": "Black Pearl",
+        "crewNumber": "18",
+        "killed": "no",
+        "cursed": ["Rum","Money"],
+        "picture": "images/Jack-Sparrow-1.jpg"
+        },
+
+        {
+        "name": "Norrington",
+        "shipName": "Royal Navy",
+        "crewNumber": "80",
+        "killed": "Yes",
+        "cursed": ["Greed", "Power"],
+        "picture": "images/norrington.jpg"
+        },   
+        
+        {
+        "name": "Barbarossa",
+        "shipName": "Black Pearl",
+        "crewNumber": "25",
+        "killed": "Yes",
+        "cursed": ["Aztec Gold", "Bone Living Dead"],
+        "picture": "images/Barbossa-1.jpg"
+        },
+
+        {
+        "name": "DavyJones",
+        "shipName": "Dutchman",
+        "crewNumber": "60",
+        "killed": "Yes anyone at sea",
+        "cursed": ["Love", "calypso"],
+        "picture": "images/Davy-Jones.jpg"
+        },
+
+        {
+        "name": "BlackBeard",
+        "shipName": "Queen Anne's Revenge",
+        "crewNumber": "40",
+        "killed": "Yes",
+        "cursed": ["Witches Sword", "Selfish Pride"],
+        "picture": "images/wyndham.jpg"
+        },
+
+        {
+        "name": "Salazar",
+        "shipName": "Silent Mary",
+        "crewNumber": "60",
+        "killed": "Yes, just bad pirates",
+        "cursed": ["King, ", "Queen, ", "Double, ", "Suite"],
+        "picture": "images/Armando-Salazar.jpg"
+        }
+
+    ]
+
+}
+
