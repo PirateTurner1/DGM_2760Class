@@ -30,14 +30,12 @@
             </ul>
             
             <h2>Instructions</h2>
-            <p id="instructions">In this game you get to try and guess a number between 1 and 15 in as few tries as possible.<br/>
-                you will be awarded a ribbon for your skills if you have the right number in the least amount of tries, so good luck! <br/>
-            if you would like to play again, all you have to do is refresh the page. be warned! the numbers will change.  </p>
-            </br>
-            <br></br>
-            <br>
-            <br>
-            <h2>select a Pirate Opponent!</h2>
+            <p id="instructions">In this game you get to try and guess a number between 2 and 12 using two dice in as few tries as possible.<br/>
+            you will be awarded a ribbon for your skills if you have the right number in the least amount of tries, so good luck! <br/>
+            if you would like to play again, all you have to do is refresh the page. be warned! the correct number will change. <br/> 
+            the fun does not stop there, you can play against a pirate opponent in this competition. The first person to the number or is highest wins.   </p>
+        
+            <h2 class = "player">Select Your Opponent!</h2>
             <ul class = "pirates">
                 <li><a href = "#" id = "turner">William Turner</a></li>
                 <li><a href = "#" id = "sparrow">Jack Sparrow</a></li>
@@ -47,7 +45,7 @@
                 <li><a href = "#" id = "blackbeard">Black Beard</a></li>
                 <li><a href = "#" id = "salazar">Armando Salazar</a></li>
             </ul>
-         
+            <br>
             <h2 id = "pirateName"></h2>
             <br>
             <img id = "picture">
@@ -59,16 +57,16 @@
                 <p>cursed: <span id = "cursed"></span></p>
             </div>
             <br>
+            
+            <h3 id = "playing">Computer Ready!</h3>
             <br>
-            <p class = "player" id = "playing">Computer Ready!</p>
             <br>
+            <h2> Role the Dice! </h2>
             <br>
-            <h3> Role the Dice! </h3>
-            <br>
-            <!--
+            
             <div class="articles">
                 <article class="a1">
-                    <h2>Play</h2>
+                    <h4>Play</h4>
                     <div>
                         <input id="guess" type="number" placeholder="number"/>
                         <button id= "buttonId" onclick="evalGuess()">Guess</button>
@@ -77,21 +75,21 @@
                 </article>
                 
                 <article class="a2">
-                    <h2>Tries</h2>
+                    <h4>Tries</h4>
                     <div id="attempts"></div>
                 </article>
         
                 <article class="a3">
-                    <h2>Feedback</h2>
+                    <h4>Feedback</h4>
                     <div id="feedback"></div>
                 </article>
         
                 <article class="a4">
-                    <h2>Award</h2>
+                    <h4>Award</h4>
                     <div id="ribbon"></div>
                 </article>
             </div>
-        -->
+    
             
         </main>
         <div class="keepOpen"></div>

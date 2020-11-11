@@ -64,7 +64,7 @@ h1 {
     flex-direction: column;
     justify-content:flex-start;
     align-items: left;
-    color:black;
+    color:#048000;
     padding-top: 20px;
 }
 
@@ -74,46 +74,50 @@ h2 {
     justify-content: flex-start;
     align-items: left;
     color:#048000;
-    margin-top: 17px;
-    margin-bottom: 5px;
-    /*text-indent: 30px;*/
+    margin-top: 10px;
+    
     font-size: 26px;
 }
-
-
 
 .objective {
     list-style-image: url("../images/check.png");
     margin-bottom: 40px;
 }
 
+.player{
+    margin-top: 40px;
+}
+
 #pageName {
     display: block;
-    height: 1150px;
+    height: 1350px;
     background-color:rgb(231, 231, 231);
     clear: both;
     padding-left: 30px;
     padding-right: 10px;
     padding-bottom: 150px;
 }
+p {
+    margin-top: 12px;
+}
+
 .pirates {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     font-size: 16px;
-    width: 940px;
+    width: 925px;
     max-height: 40px;
     background-color: #00fc3f;
+    color: black;
     border-radius: 10px; 
     padding: 10px 0 10px 0;
 }
 
 .pirates a{
     color: black;
-    height: 46px;
     list-style: none;
     text-decoration: none;
-    font-size: 16px;
     font-weight: bold;
     border-left: 2px solid rgb(231, 231, 231);
     border-right: 2px solid rgb(231, 231, 231); 
@@ -122,8 +126,13 @@ h2 {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+.pirates a:hover {
+    color: rgb(251, 255, 21);
+    background-color:#00fc3f;
+}
 
 #picture {
+    /*margin-top: 10px;*/
     width: 350px;
     height: 224px;
     float:left;
@@ -132,27 +141,17 @@ h2 {
 
 .p p {
     float:left;
-    width: 40%;
+    width: 32%;
     border: solid 1px rgb(36, 172, 2);
     border-radius: 3rem;
-    padding: 12px;
+    padding: 7px;
     padding-left: 15px;
-    /*width: 330px;*/
     font-size: 14px;
+    font-weight: bold;
     background-color:  #00fc3f;
     margin-left: 15px;
-    margin-bottom: 8px;
-}
-
-main p {
-    float:left;
-    /*width: 80%;*/
-    padding: 12px;
-    padding-left: 5px;
-    font-size: 18px;
-    padding-top: 20px;
-    margin-left: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    margin-right: 280px;
 }
 
 h3{
@@ -160,18 +159,17 @@ h3{
     flex-direction: row;
     justify-content: flex-start;
     align-items: left;
-    color:#048000;
-    margin-top: 190px;
+    color:black;
+    margin-top: 200px;
     margin-bottom: 5px;
     /*text-indent: 30px;*/
-    font-size: 26px; 
-    width:40%;
+    font-size: 18px; 
+    width:60%;
 }
 
 .articles { 
     display: flex;
     flex-direction: row;
-    margin-top: 250px;
 }
 
 main article {
@@ -186,13 +184,16 @@ main article div {
 }
 
 main article.a1 {
-    width: 15%;
+    width: 20%;
     background-color: rgb(163, 245, 163);
    
 }
 
-main article.a1 h2 {
+main article.a1 h4 {
     margin-left:15px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 main article.a1 input {
@@ -223,6 +224,13 @@ main article.a2 {
     background-color: rgb(163, 245, 163);
 }
 
+article.a2 h4 {
+    margin-left:15px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 main article.a2 div {
     text-align: center;
     font-size: 3rem;
@@ -239,6 +247,13 @@ main article.a3 {
     background-color: rgb(163, 245, 163);
 }
 
+article.a3 h4 {
+    margin-left:15px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 main #feedback {
     font-size: 1.75rem;
     color:black;
@@ -248,6 +263,13 @@ main article.a4 {
     width: 11%;
     height: 130px;
     background-color: rgb(163, 245, 163);
+}
+
+article.a4 h4 {
+    margin-left:15px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 img {
