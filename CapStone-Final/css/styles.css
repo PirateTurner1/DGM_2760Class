@@ -184,7 +184,7 @@ main article div {
 }
 
 main article.a1 {
-    width: 20%;
+    width: 40%;
     background-color: rgb(163, 245, 163);
    
 }
@@ -218,6 +218,11 @@ main article.a1 button {
     margin-left:15px;
     
 }
+  
+myDice {
+    height: 80px;
+    width:80px;
+} 
 
 main article.a2 {
     width: 180px;
@@ -273,8 +278,8 @@ article.a4 h4 {
 }
 
 img {
-    height: 120px;
-    width:80px;
+    height: 60px;
+    width:60px;
 }
 
 div.keepOpen { 

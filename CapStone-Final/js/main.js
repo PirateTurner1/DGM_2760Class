@@ -47,18 +47,17 @@ function pirateInfo(event) {
     let picturePlacement = document.querySelector('#picture')
     picturePlacement.src = `${pirateChoice.picture}`
     let picture = document.querySelector('#picture')
-
-
 }
 
-
+/*
 let correctNumber = Math.floor(Math.random() * 6 + 1)
 console.log(`The correctNumber is ${correctNumber}`)
 
 let guessed = false
 let totalGuesses = 0
 let gamerGuess = 0
-
+*/
+/*
 // if, else statement to give feedback to the user. 
 function evalGuess() {
     totalGuesses += 1 
@@ -79,7 +78,48 @@ function evalGuess() {
         totalGuesses -= 1
     }
         document.querySelector('#attempts').innerText = totalGuesses    
+}*/
+
+//generating random dice role
+function throwDice(){
+    let rand1 = Math.floor(Math.random() * 5) + 1;
+    let rand2 = Math.floor(Math.random() * 5) + 1;
+    let rand3 = Math.floor(Math.random() * 5) + 1;
+    let rand4 = Math.floor(Math.random() * 5) + 1;
+
+    document.getElementById('myDice1').src = "images/d" + rand1 + ".png";
+    document.getElementById('myDice2').src = "images/d" + rand2 + ".png";
+    document.getElementById('pirateDice1').src = "images/e" + rand1 + ".png";
+    document.getElementById('pirateDice2').src = "images/e" + rand2 + ".png";
+
+    let side_alt = ["roll: 1", "roll: 2", "roll: 3", "roll: 4", "roll: 5", "roll: 6"];
+    document.getElementById('myDice').alt = side_alt[rand1 - 1]
+    document.getElementById('myDice').alt = side_alt[rand2 - 1]
+    document.getElementById('pirateDice').alt = side_alt[rand3 - 1]
+    document.getElementById('pirateDice').alt = side_alt[rand4 - 1]
 }
+
+function who_won(rand1, rand2, rand3, rand4) {
+    let PlayerPoints = rand1 + rand2;
+    let piratePoints = rand3 + rand4;
+    let ribbon = winner (PlayerPoints, piratePoints);
+    document.getElementById('awardImage').src = "images/" + ribbon
+    document.getElementById('awardImage').alt = ribbon;
+}
+
+function winner(player, pirate) {
+    if (player < pirate) {
+        return ribbon;
+    } else if (pirate < player) {
+        return ribbon;
+    }else if (player == pirate) {
+        return ;
+    }
+
+
+
+}
+
 
 //giving the function to the show results to the user.
 function giveAward() {
