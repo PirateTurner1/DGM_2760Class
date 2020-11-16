@@ -79,12 +79,12 @@ function evalGuess() {
     }
         document.querySelector('#attempts').innerText = totalGuesses    
 }*/
-//const firstRandNum = Math.floor(Math.random() *6) + 1;
+const firstRandNum = Math.floor(Math.random() *6) + 1;
 const firstDiceImage =  'images/d' + firstRandNum + '.png';
 document.querySelectorAll('img')[1].setAttribute('src', firstDiceImage)
 document.querySelectorAll ('img')[2].setAttribute('src', firstDiceImage)
 
-//const secondRandNum = Math.floor(Math.random() *6) + 1;
+const secondRandNum = Math.floor(Math.random() *6) + 1;
 const secondDiceImage =  'images/e' + secondRandNum + '.png';
 document.querySelectorAll('img')[3].setAttribute('src', secondDiceImage)
 document.querySelectorAll ('img')[4].setAttribute('src', secondDiceImage)
