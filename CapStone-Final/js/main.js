@@ -79,24 +79,42 @@ function evalGuess() {
     }
         document.querySelector('#attempts').innerText = totalGuesses    
 }*/
+//const firstRandNum = Math.floor(Math.random() *6) + 1;
+const firstDiceImage =  'images/d' + firstRandNum + '.png';
+document.querySelectorAll('img')[1].setAttribute('src', firstDiceImage)
+document.querySelectorAll ('img')[2].setAttribute('src', firstDiceImage)
+
+//const secondRandNum = Math.floor(Math.random() *6) + 1;
+const secondDiceImage =  'images/e' + secondRandNum + '.png';
+document.querySelectorAll('img')[3].setAttribute('src', secondDiceImage)
+document.querySelectorAll ('img')[4].setAttribute('src', secondDiceImage)
+
+if (firstRandNum > secondRandNum) {
+    document.querySelector('#feedback').innerHTML = 'the winner is: player 1'
+    giveAward()
+} else if (secondRandNum > firstRandNum) {
+    document.querySelector('#feedback').innerHTML = 'the winner is: the pirate!';
+}else {
+    document.querySelector('#feedback').innerHTML = 'its a draw, try again!';
+}
 
 //generating random dice role
 function throwDice(){
-    let rand1 = Math.floor(Math.random() * 5) + 1;
-    let rand2 = Math.floor(Math.random() * 5) + 1;
-    let rand3 = Math.floor(Math.random() * 5) + 1;
-    let rand4 = Math.floor(Math.random() * 5) + 1;
+    let rand1 = Math.floor(Math.random() * 6) + 1;
+    let rand2 = Math.floor(Math.random() * 6) + 1;
+    let rand3 = Math.floor(Math.random() * 6) + 1;
+    let rand4 = Math.floor(Math.random() * 6) + 1;
 
     document.getElementById('myDice1').src = "images/d" + rand1 + ".png";
     document.getElementById('myDice2').src = "images/d" + rand2 + ".png";
-    document.getElementById('pirateDice1').src = "images/e" + rand1 + ".png";
-    document.getElementById('pirateDice2').src = "images/e" + rand2 + ".png";
+    document.getElementById('pirateDice1').src = "images/e" + rand3 + ".png";
+    document.getElementById('pirateDice2').src = "images/e" + rand4 + ".png";
 
-    let side_alt = ["roll: 1", "roll: 2", "roll: 3", "roll: 4", "roll: 5", "roll: 6"];
-    document.getElementById('myDice').alt = side_alt[rand1 - 1]
-    document.getElementById('myDice').alt = side_alt[rand2 - 1]
-    document.getElementById('pirateDice').alt = side_alt[rand3 - 1]
-    document.getElementById('pirateDice').alt = side_alt[rand4 - 1]
+    //let side_alt = ["roll: 1", "roll: 2", "roll: 3", "roll: 4", "roll: 5", "roll: 6"];
+    //document.getElementById('myDice').alt = side_alt[rand1 - 1]
+    //document.getElementById('myDice').alt = side_alt[rand2 - 1]
+    //document.getElementById('pirateDice').alt = side_alt[rand3 - 1]
+    //document.getElementById('pirateDice').alt = side_alt[rand4 - 1]
 }
 
 function who_won(rand1, rand2, rand3, rand4) {
@@ -115,10 +133,11 @@ function winner(player, pirate) {
     }else if (player == pirate) {
         return ;
     }
-
-
-
 }
+
+
+
+
 
 
 //giving the function to the show results to the user.
@@ -159,3 +178,5 @@ function giveAward() {
 
     // note to self...only append child if the ribbon element does not have any child nodes yet 
 }
+
+
