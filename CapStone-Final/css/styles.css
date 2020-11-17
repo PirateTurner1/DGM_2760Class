@@ -141,7 +141,7 @@ p {
 
 .p p {
     float:left;
-    width: 32%;
+    /*width: 32%;*/
     border: solid 1px rgb(36, 172, 2);
     border-radius: 3rem;
     padding: 7px;
@@ -181,32 +181,19 @@ main article div {
     background-color: #fff;
     padding-top: 0px;
     margin-bottom: 0 auto;
-    /*display: inline-block;*/
 }
 
 main article.a1 {
-    width: 27%;
+    width: 261px;
     background-color: rgb(163, 245, 163);
-    padding-top: 0px;
     margin-bottom: 0 auto;
 }
 
-main article.a1 div{
-    height: 130px;
-    background-color: #fff;
-    
-    margin-bottom: 20px;
+main article.a1 div {
+    margin-bottom: 10px;
     display: inline-block;
-    
 }
-main article.a1 div.dice1{
-    height: 130px;
-    background-color: #fff;
-    
-    margin-bottom: 20px;
-    display: inline-block;
-    
-}
+
 main article.a1 h4 {
     margin-left:15px;
     font-size: 18px;
@@ -214,27 +201,29 @@ main article.a1 h4 {
     padding-bottom: 5px;
 }
 
-main article.a1 input {
-    border: 1px solid black;
-    width: 50%;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom: 1rem;
-    padding-left: 5px;
-    /*display: inline-block;*/
-}
-
 main article.a1 button {
+    display: flex;
+    flex-direction: row;
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(163, 245, 163);
-    width: 50%;
+    width: 55px;
     font-size: 16px;
     color: black;
-    padding:3px;
-    margin-left:15px;
+    padding-top:5px;
+    margin-left:5px;   
+}
+
+.dice1 {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  
+}
+
+.dice2 {
+    padding-left: 10px;
+    padding-right:10px;
     
 }
   
@@ -305,7 +294,6 @@ img {
 div.keepOpen { 
     clear: both;
 } 
-
 
 footer{
     height: 70px;

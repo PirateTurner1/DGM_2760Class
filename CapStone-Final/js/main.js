@@ -49,15 +49,15 @@ function pirateInfo(event) {
     let picture = document.querySelector('#picture')
 }
 
-/*
+
 let correctNumber = Math.floor(Math.random() * 6 + 1)
 console.log(`The correctNumber is ${correctNumber}`)
 
 let guessed = false
 let totalGuesses = 0
 let gamerGuess = 0
-*/
-/*
+
+
 // if, else statement to give feedback to the user. 
 function evalGuess() {
     totalGuesses += 1 
@@ -78,16 +78,15 @@ function evalGuess() {
         totalGuesses -= 1
     }
         document.querySelector('#attempts').innerText = totalGuesses    
-}*/
+}
+
+
+
 const firstRandNum = Math.floor(Math.random() *6) + 1;
 const firstDiceImage =  'images/d' + firstRandNum + '.png';
-document.querySelectorAll('img')[1].setAttribute('src', firstDiceImage)
-document.querySelectorAll ('img')[2].setAttribute('src', firstDiceImage)
-
 const secondRandNum = Math.floor(Math.random() *6) + 1;
 const secondDiceImage =  'images/e' + secondRandNum + '.png';
-document.querySelectorAll('img')[3].setAttribute('src', secondDiceImage)
-document.querySelectorAll ('img')[4].setAttribute('src', secondDiceImage)
+
 
 if (firstRandNum > secondRandNum) {
     document.querySelector('#feedback').innerHTML = 'the winner is: player 1'
@@ -116,6 +115,10 @@ function throwDice(){
     //document.getElementById('pirateDice').alt = side_alt[rand3 - 1]
     //document.getElementById('pirateDice').alt = side_alt[rand4 - 1]
 }
+document.querySelectorAll('img')[1].setAttribute('src', firstDiceImage)
+document.querySelectorAll ('img')[2].setAttribute('src', firstDiceImage)
+document.querySelectorAll('img')[3].setAttribute('src', secondDiceImage)
+document.querySelectorAll ('img')[4].setAttribute('src', secondDiceImage)
 
 function who_won(rand1, rand2, rand3, rand4) {
     let PlayerPoints = rand1 + rand2;
