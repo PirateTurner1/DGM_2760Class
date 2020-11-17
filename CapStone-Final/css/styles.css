@@ -202,19 +202,19 @@ main article.a1 h4 {
 }
 
 main article.a1 button {
-    display: flex;
-    flex-direction: row;
+   
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(163, 245, 163);
     width: 55px;
     font-size: 16px;
-    color: black;
-    padding-top:5px;
+   
     margin-left:5px; 
     margin-top:5px;  
 }
-
+.diceRow {
+    align-content: center;
+}
 .dice1 {
     padding-bottom: 10px;
     padding-left: 10px;

@@ -67,25 +67,26 @@
             <div class="articles">
                 <article class="a1">
                     <h4>Play</h4>
-                    <div class = "dice1">
-                        <p><b>Your Dice</b></p>
-                        <br>
-                        <img src = "images/d1"  id = "myDice1"/>
-                        <img src = "images/d1"  id = "myDice2"/>
-                        <br>
-                        <button id= "buttonId" onclick="throwDice()">Roll</button>
-                    </div>
-                    <div class = "dice2">    
-                        <p><b>Pirates Dice</b></p>
-                        <br>
-                        <img src = "images/e1"  id = "pirateDice1"/>
-                        <img src = "images/e1"  id = "pirateDice2"/>
-                        <br>
-                        <button id= "buttonId1" onclick="throwDice()">Roll</button>
-                        
+                    <div class="diceRow" >
+                        <div class="diceColumn">
+                          <h5><b>Your Dice</b></h5>
+                          <img src="images/d1.png" id="playerDice1">
+                          <img src="images/d1.png" id="playerDice2">
+                          <div id="player_score"></div>
+                        </div>
+                        <div class="diceColumn">
+                          <h5><b>Pirates Dice</b></h5>
+                          <img src="images/e1.png" id="pirateDice1">
+                          <img src="images/e1.png" id="pirateDice2">
+                          <div id="enemy_score"></div>
+                        </div>
+                        <div class="diceColumn">
+                            <img src="images/good-luck.gif" id="message" alt="Good Luck!"/>
+                            <button class="greenBut" onClick="throwDice()">Roll!</button>                        
+                        </div>
                     </div>
                 </article>
-                
+            
                 <article class="a2">
                     <h4>Tries</h4>
                     <div id="attempts"></div>
