@@ -173,11 +173,11 @@ h3{
 }
 
 main article {
-    width: 15%;
+    width: 25%;
 }
 
 main article div {
-    height: 130px;
+    height: 150px;
     background-color: #fff;
     padding-top: 0px;
     margin-bottom: 0 auto;
@@ -211,19 +211,22 @@ main article.a1 button {
     font-size: 16px;
     color: black;
     padding-top:5px;
-    margin-left:5px;   
+    margin-left:5px; 
+    margin-top:5px;  
 }
 
 .dice1 {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    height: 150px;
   
 }
 
 .dice2 {
     padding-left: 10px;
     padding-right:10px;
+    height: 150px;
     
 }
   
@@ -257,7 +260,7 @@ main #attempts {
 }
 
 main article.a3 {
-    width: 30%;
+    width: 40%;
     background-color: rgb(163, 245, 163);
 }
 
