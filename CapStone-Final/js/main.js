@@ -6,13 +6,6 @@ document.querySelector('header > h2').innerText = "Final Project!";
 document.getElementById('head1').innerHTML = "Pirates Game!";
 document.getElementById('head2').innerHTML = "This page demonstrates:";
 
-
-// i could use a few buttons to conjure up a short story.  
-// i could use dice or something to role out a game with lots of random feed back
-// i could make a hotel of different characters 
-// i could make a game to create the weather pattern.
-//buttons to a worded sentence of query's.
-
 async function getPirateData() {
     try {
         const response = await fetch('js/pirate.json')
@@ -26,17 +19,19 @@ async function getPirateData() {
 let pirateData = {}
 getPirateData().then(data => pirateData = data)
 console.log(pirateData)
+
 //storing in a variable to document
 let selectAll = document.querySelectorAll('a')
 selectAll.forEach (() => addEventListener('click', pirateInfo))
 console.log(selectAll)
-
+//putting the API and the user functions together
 function pirateInfo(event) {
     let pirateChoice = pirateData.pirates.find(pirate => {
         return event.target.id === pirate.name.toLowerCase()
     })
     console.log(pirateChoice)
 
+    //putting it on display.
     document.querySelector('#pirateName').textContent = `${pirateChoice.name} the Pirate`
     document.querySelector('#shipName').textContent = `${pirateChoice.shipName}`
     document.querySelector('#crewNumber').textContent = `${pirateChoice.crewNumber}`
@@ -49,22 +44,7 @@ function pirateInfo(event) {
     let picture = document.querySelector('#picture')
 }
 
-//const firstRandNum = Math.floor(Math.random() *6) + 1;
-//const firstDiceImage =  'images/d' + firstRandNum + '.png';
-//const secondRandNum = Math.floor(Math.random() *6) + 1;
-//const secondDiceImage =  'images/e' + secondRandNum + '.png';
-
-
-//if (firstRandNum > secondRandNum) {
-    //document.querySelector('#feedback').innerHTML = 'the winner is: player 1'
-    //giveAward()
-//} else if (secondRandNum > firstRandNum) {
-    //document.querySelector('#feedback').innerHTML = 'the winner is: the pirate!';
-//}else {
-   // document.querySelector('#feedback').innerHTML = 'its a draw, try again!';
-//}
-
-
+//giving the dice info.
 const sides = ["d1.png", "d2.png", "d3.png", "d4.png", "d5.png", "d6.png"];
 const side_alt = ["roll: 1", "roll: 2", "roll: 3", "roll: 4", "roll: 5", "roll: 6"];
 
@@ -102,64 +82,82 @@ function throwDice() {
 
     function winner(player, pirate) {
         if (player > pirate) {
+            document.querySelector('#feedback').innerHTML = `${userMessage}`;
             return "jarDirt.gif";
         }else if (pirate == player) {
+            document.querySelector('#feedback').innerHTML = 'its a draw, try again!';
             return "JackSparrow.gif"
         }else {
+            document.querySelector('#feedback').innerHTML = `${fateMessage}`; //${pirateChoice.name} this keeps showing undefined...
             return "DavyJones.gif"
         }
     }
 
-   // const feedback = document.querySelector('#feedback')
-    //if (gamerGuess == correctNumber) {
-        //console.log(`gamerGuess is equal to correctNumber`)
-       // feedback.innerText = 'You are correct! \n You win!'
-       // giveAward()
-
 }
-//document.querySelectorAll('img')[1].setAttribute('src', firstDiceImage)
-//document.querySelectorAll ('img')[2].setAttribute('src', firstDiceImage)
-//document.querySelectorAll('img')[3].setAttribute('src', secondDiceImage)
-//document.querySelectorAll ('img')[4].setAttribute('src', secondDiceImage)
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor( Math.random() *(max - min + 1)) + min;
+    // The maximum is inclusive and so is the minimum also inclusive.
+}
+
+let fate = getRandomIntInclusive(1, 5)
+let user = getRandomIntInclusive(1, 5)
+let theGameTie = getRandomIntInclusive(1, 5)
 
 
-//giving the function to the show results to the user.
-function giveAward() {
-    console.log('Congratulations!')
-    let imagePath = '#'
-    switch(totalGuesses) {
+//giving the function to the show results to the user wins.
+function getUserMessage(user) {
+    let message
+    switch (user) {  //this is a switch statement. 
         case 1:
-        case 2:
-        case 3: 
-            imagePath = 'images/blue-ribbon.jpg'
+            message = "SO, you think you've Won, do you?"
             break;
-        case 4: 
+        case 2:
+            message = 'You cheated! You PIRATE!'
+            break;
+        case 3:
+            message = 'This is either madness, or brilliance!'
+            break;
+        case 4:
+            message = 'I’ve got a jar of dirt! Enough winning!'
+            break;
         case 5:
-        case 6: 
-            imagePath = 'images/red-ribbon.jpg'
-        break;
-        default: 
-            imagePath = 'images/yellow-ribbon.jpg'
-        
-        /* //i looked at the instructions... though this idea was good and does work. 
-        case 7:
-        case 8:
-        case 9:    
-            imagePath = 'images/yellow-ribbon.jpg'
-        break;
-        default: 
-            imagePath = "images/no-ribbonArt.png"*/
+            message = 'I will make you pay for what you did to me!'
+            break;
+      
     }
+    return message
 
-
-    // appending the child to create the results on the display.
-    const awardImage = document.createElement('img') // this Creates an 'img' in html
-    awardImage.setAttribute('src', imagePath)
-    const ribbon = document.querySelector('#ribbon')
-    ribbon.appendChild(awardImage)
-    document.getElementById('buttonId').setAttribute("disabled", "disabled");
-
-    // note to self...only append child if the ribbon element does not have any child nodes yet 
 }
+const userMessage = getUserMessage(user);
 
+//giving the function to the show results to the pirates win.
+function getFortune(fate) {
+    let message
+    switch (fate) { 
+        case 1:
+            message = 'Your a LIAR and you will spend eternity on my ship!'
+            break;
+        case 2:
+            message = 'You are without a doubt the worst pirate I’ve ever heard of.'
+            break;
+        case 3:
+            message = "You better start believing in ghost stories, you're in one!"
+            break;
+        case 4:
+            message = "You're off the edge of the map, mate. Here there be monsters. "
+            break;
+        case 5:
+            message = 'Nobody move! I dropped me brain!!'
+            break;
+      
+    }
+    return message
+
+}
+const fateMessage = getFortune(fate);
+//const fateRevealed = `Message: ${userMessage}`; //${day}, you will ${fateMessage}`;
+//document.querySelector('#feedback').innerText = fateRevealed;
 
