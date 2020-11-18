@@ -83,10 +83,10 @@ function throwDice() {
     document.getElementById("pirateDice2").src = "images/e" + rand4 + ".png";
 
     // Set Image alt
-    document.getElementById("playerDice1").alt = side_alt[rand1];
-    document.getElementById("playerDice2").alt = side_alt[rand2];
-    document.getElementById("pirateDice1").alt = side_alt[rand3];
-    document.getElementById("pirateDice2").alt = side_alt[rand4];
+    document.getElementById("playerDice1").alt = side_alt[rand1 - 1];
+    document.getElementById("playerDice2").alt = side_alt[rand2 - 1];
+    document.getElementById("pirateDice1").alt = side_alt[rand3 - 1];
+    document.getElementById("pirateDice2").alt = side_alt[rand4 - 1];
 
 
     who_won(rand1,rand2,rand3,rand4);
@@ -100,13 +100,13 @@ function throwDice() {
         document.getElementById("message").alt = giffy;
     }
 
-    function winner(player, enemy) {
-        if (player < enemy) {
-            return giveAward();
-        }else if (enemy < player) {
-            return giveAward()
-        }else if (player == enemy) {
-            return giveAward()
+    function winner(player, pirate) {
+        if (player > pirate) {
+            return "jarDirt.gif";
+        }else if (pirate == player) {
+            return "JackSparrow.gif"
+        }else {
+            return "DavyJones.gif"
         }
     }
 
