@@ -188,11 +188,13 @@ main article.a1 {
     background-color: rgb(163, 245, 163);
     margin-bottom: 0 auto;
     
+    
 }
 
 main article.a1 div {
     margin-bottom: 10px;
     display: inline-block;
+    margin-left: 10px;
 }
 
 main article.a1 h4 {
@@ -218,7 +220,7 @@ main article.a1 button {
 .diceRow {
     align-content: center;
     padding: 1em;
-    margin-left: 10px;
+   
 }/*
 .dice1 {
     padding-bottom: 10px;
@@ -308,8 +310,9 @@ img {
 }
 main #message {
     height: 150px;
-    width:150px;
-    padding-bottom: 6px;
+    width:165px;
+    padding-bottom: 15px;
+    padding-left: 16px;
 }
 div.keepOpen { 
     clear: both;
