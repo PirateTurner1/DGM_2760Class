@@ -184,9 +184,10 @@ main article div {
 }
 
 main article.a1 {
-    width: 261px;
+    width: 145px;
     background-color: rgb(163, 245, 163);
     margin-bottom: 0 auto;
+    
 }
 
 main article.a1 div {
@@ -195,26 +196,28 @@ main article.a1 div {
 }
 
 main article.a1 h4 {
-    margin-left:15px;
+    margin-left:17px;
     font-size: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 main article.a1 button {
-   
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(163, 245, 163);
     width: 55px;
     font-size: 16px;
-   
     margin-left:5px; 
-    margin-top:5px;  
+    margin-top:5px; 
+     
 }
+
 .diceRow {
     align-content: center;
-}
+    padding: 1em;
+    margin-left: 10px;
+}/*
 .dice1 {
     padding-bottom: 10px;
     padding-left: 10px;
@@ -228,16 +231,15 @@ main article.a1 button {
     padding-right:10px;
     height: 150px;
     
-}
-  
+}*/
+/*  
 myDice {
     height: 80px;
     width:80px;
-    /*display: inline-block;*/
-} 
+} */
 
 main article.a2 {
-    width: 180px;
+    width: 145px;
     background-color: rgb(163, 245, 163);
 }
 
@@ -246,11 +248,12 @@ article.a2 h4 {
     font-size: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 150px;
 }
 
 main article.a2 div {
     text-align: center;
-    font-size: 3rem;
+    width: 150px;
 }
 
 main #attempts {

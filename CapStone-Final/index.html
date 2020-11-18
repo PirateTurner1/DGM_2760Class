@@ -63,33 +63,24 @@
             <br>
             <h2> Role the Dice! </h2>
             <br>
-            
             <div class="articles">
                 <article class="a1">
-                    <h4>Play</h4>
+                    <h4>your Dice</h4>
                     <div class="diceRow" >
-                        <div class="diceColumn">
-                          <h5><b>Your Dice</b></h5>
-                          <img src="images/d1.png" id="playerDice1">
-                          <img src="images/d1.png" id="playerDice2">
-                          <div id="player_score"></div>
-                        </div>
-                        <div class="diceColumn">
-                          <h5><b>Pirates Dice</b></h5>
-                          <img src="images/e1.png" id="pirateDice1">
-                          <img src="images/e1.png" id="pirateDice2">
-                          <div id="enemy_score"></div>
-                        </div>
-                        <div class="diceColumn">
-                            <img src="images/good-luck.gif" id="message" alt="Good Luck!"/>
-                            <button class="greenBut" onClick="throwDice()">Roll!</button>                        
-                        </div>
+                        <img id="playerDice1" src="images/d1.png">
+                        <img id="playerDice2" src="images/d1.png">
+                        <br>
+                        <button class="buttonId" onClick="throwDice()">Roll 'em!</button>
                     </div>
                 </article>
             
                 <article class="a2">
-                    <h4>Tries</h4>
-                    <div id="attempts"></div>
+                    <h4>Pirates Dice</h4>
+                    <div class="diceRow">
+                        <img id="pirateDice1" src="images/e1.png">
+                        <img id="pirateDice2" src="images/e1.png">
+                        
+                    <!--<div id="attempts"></div>-->
                 </article>
         
                 <article class="a3">
@@ -99,6 +90,10 @@
         
                 <article class="a4">
                     <h4>Award</h4>
+                    <div class="diceColumn">
+                        <img src="images/goodluck.gif" id="message" alt="Good Luck!"/>
+                                                
+                    </div>
                     <div id="ribbon"></div>
                 </article>
             </div>
