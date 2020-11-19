@@ -49,15 +49,6 @@ function giveAward() {
         break;
         default: 
             imagePath = 'images/yellow-ribbon.jpg'
-        
-        /* //i looked at the instructions... though this idea was good and does work. 
-        case 7:
-        case 8:
-        case 9:    
-            imagePath = 'images/yellow-ribbon.jpg'
-        break;
-        default: 
-            imagePath = "images/no-ribbonArt.png"*/
     }
 
     // appending the child to create the results on the display.

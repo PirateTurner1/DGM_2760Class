@@ -121,16 +121,16 @@ function getUserMessage(user) {
             message = "SO, you think you've Won, do you?"
             break;
         case 2:
-            message = 'You cheated! You PIRATE!'
+            message = "You cheated! You PIRATE!"
             break;
         case 3:
-            message = 'This is either madness, or brilliance!'
+            message = "This is either madness, or brilliance!"
             break;
         case 4:
-            message = 'I’ve got a jar of dirt! Enough winning!'
+            message = "I’ve got a jar of dirt! Enough winning!"
             break;
         case 5:
-            message = 'I will make you pay for what you did to me!'
+            message = "I will make you pay for what you did to me!"
             break;
     }
     return message
@@ -146,7 +146,7 @@ function getFortune(fate) {
             message = "You're a LIAR and you will spend eternity on my ship!"
             break;
         case 2:
-            message = 'You are without a doubt the worst pirate I’ve ever heard of.'
+            message = "You are without a doubt the worst pirate I’ve ever heard of."
             break;
         case 3:
             message = "You best start believing in ghost stories, you're in one!"
@@ -155,7 +155,7 @@ function getFortune(fate) {
             message = "You're off the edge of the map, mate. Here there be monsters. "
             break;
         case 5:
-            message = 'what are you?...  DEATH! You Loose!'
+            message = "What are you?...  DEATH! You Loose!"
             break;
     }
     return message
@@ -168,10 +168,10 @@ function getGameMessage(game) {
     let message
     switch (fate) { 
         case 1:
-            message = 'Did everyone see that? Because I will not be doing it again.'
+            message = "Did everyone see that? Because I will not be doing it again."
             break;
         case 2:
-            message = 'If you were waiting for the opportune moment, that was it.'
+            message = "If you were waiting for the opportune moment, that was it."
             break;
         case 3:
             message = "Take what ye can! Give nothin' back!"
@@ -180,7 +180,7 @@ function getGameMessage(game) {
             message = "Capt'n I wish to report a mutiny, I can name fingers and point names!"
             break;
         case 5:
-            message = 'Nobody move! I dropped me brain!!'
+            message = "Nobody move! I dropped me brain!!"
             break;
     }
     return message
