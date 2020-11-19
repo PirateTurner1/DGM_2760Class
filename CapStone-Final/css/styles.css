@@ -75,7 +75,6 @@ h2 {
     align-items: left;
     color:#048000;
     margin-top: 10px;
-    
     font-size: 26px;
 }
 
@@ -90,13 +89,14 @@ h2 {
 
 #pageName {
     display: block;
-    height: 1350px;
+    height: 1650px;
     background-color:rgb(231, 231, 231);
     clear: both;
     padding-left: 30px;
     padding-right: 10px;
     padding-bottom: 150px;
 }
+
 p {
     margin-top: 12px;
 }
@@ -132,7 +132,6 @@ p {
 }
 
 #picture {
-    /*margin-top: 10px;*/
     width: 350px;
     height: 224px;
     float:left;
@@ -141,7 +140,6 @@ p {
 
 .p p {
     float:left;
-    /*width: 32%;*/
     border: solid 1px rgb(36, 172, 2);
     border-radius: 3rem;
     padding: 7px;
@@ -162,7 +160,6 @@ h3{
     color:black;
     margin-top: 200px;
     margin-bottom: 5px;
-    /*text-indent: 30px;*/
     font-size: 18px; 
     width:60%;
 }
@@ -195,6 +192,7 @@ main article.a1 div {
     margin-bottom: 10px;
     display: inline-block;
     margin-left: 10px;
+    padding-left: 5px;
 }
 
 main article.a1 h4 {
@@ -202,6 +200,17 @@ main article.a1 h4 {
     font-size: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+main article.a1 input {
+    border: 1px solid black;
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 1rem;
+    padding-left: 5px;
 }
 
 main article.a1 button {
@@ -218,10 +227,17 @@ main article.a1 button {
 }
 
 .diceRow {
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     padding: 1em;
     width: 197px;
    
+}
+
+#playerDice1, #playerDice2, #pirateDice1, #pirateDice2 { 
+    height: 50px;
+    width:50px;
+    padding-left: 6px;
 }
 
 
@@ -243,6 +259,13 @@ main article.a2 div {
     width: 195px;
 }
 
+main #attempts {
+    font-size: 4rem; 
+    color:black;
+    padding-right: 90px;
+    padding-top: 10px;
+}
+
 main article.a3 {
     width: 35%;
     background-color: rgb(163, 245, 163);
@@ -258,7 +281,11 @@ article.a3 h4 {
 main #feedback {
     padding-top: 20px;
     padding-left: 20px;
-    
+    font-size: 1.5rem;
+    color:black;
+}
+main #feedFront {
+    padding-top: 10px;
     font-size: 1.5rem;
     color:black;
 }
@@ -285,8 +312,13 @@ article.a4 h4 {
 }
 
 img {
-    height: 50px;
-    width:50px;
+    height: 170px;
+    width: 170px;
+    align-content: center;
+    padding: 1em;
+    margin-right: 10px;
+    height: 160px;
+    
 }
 main #message {
     height: 150px;
@@ -294,6 +326,15 @@ main #message {
     padding-bottom: 15px;
     padding-left: 16px;
 }
+
+main #ribbon {
+    height: 160px;
+    width:185px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+}
+
 div.keepOpen { 
     clear: both;
 } 

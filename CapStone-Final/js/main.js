@@ -29,26 +29,19 @@ function pirateInfo(event) {
     let pirateChoice = pirateData.pirates.find(pirate => {
         return event.target.id === pirate.name.toLowerCase()
     })
-    console.log(pirateChoice)
 
-    //putting it on display.
-    document.querySelector('#pirateName').textContent = `${pirateChoice.name} the Pirate`
-    document.querySelector('#shipName').textContent = `${pirateChoice.shipName}`
-    document.querySelector('#crewNumber').textContent = `${pirateChoice.crewNumber}`
-    document.querySelector('#killed').textContent = `${pirateChoice.killed}`
-    document.querySelector('#cursed').textContent = `${pirateChoice.cursed[0] + pirateChoice.cursed[1]}`
-    document.querySelector('#playing').textContent = `${pirateChoice.playing}`
+    //putting it on display but only works for this part not the rest.
+    document.querySelector('#pirateName').textContent = `${pirateChoice.name} the Pirate`;
+    document.querySelector('#shipName').textContent = `${pirateChoice.shipName}`;
+    document.querySelector('#crewNumber').textContent = `${pirateChoice.crewNumber}`;
+    document.querySelector('#killed').textContent = `${pirateChoice.killed}`;
+    document.querySelector('#cursed').textContent = `${pirateChoice.cursed[0] + pirateChoice.cursed[1]}`;
+    document.querySelector('#playing').textContent = `${pirateChoice.playing}`;
         
-    let picturePlacement = document.querySelector('#picture')
-    picturePlacement.src = `${pirateChoice.picture}`
-    let picture = document.querySelector('#picture')
+    let picturePlacement = document.querySelector('#picture');
+    picturePlacement.src = `${pirateChoice.picture}`;
+    let picture = document.querySelector('#picture');
 }
-
-/*
-Note:  there is a message that states that "${pirateChoice.name}" shows as undefined.
-but only as the game in the next part is played from here down.
-However, everything else works smoothly.  
-*/
 
 //giving the dice info.
 const sides = ["d1.png", "d2.png", "d3.png", "d4.png", "d5.png", "d6.png"];
@@ -98,7 +91,6 @@ function throwDice() {
             return "DavyJones.gif"
         }
     }
-
 }
 
 function getRandomIntInclusive(min, max) {
@@ -108,9 +100,9 @@ function getRandomIntInclusive(min, max) {
     // The maximum is inclusive and so is the minimum also inclusive.
 }
 
-let fate = getRandomIntInclusive(1, 5)
-let user = getRandomIntInclusive(1, 5)
-let game = getRandomIntInclusive(1, 5)
+let fate = getRandomIntInclusive(1, 5);
+let user = getRandomIntInclusive(1, 5);
+let game = getRandomIntInclusive(1, 5);
 
 
 //giving the function to the show results to the user wins.
@@ -187,3 +179,68 @@ function getGameMessage(game) {
 
 }
 const gameMessage = getGameMessage(game);
+
+let correctNumber = Math.floor(Math.random() * 15 + 1)
+console.log(`The correctNumber is ${correctNumber}`)
+
+let guessed = false
+let totalGuesses = 0
+let gamerGuess = 0
+
+// if, else statement to give feedback to the user. 
+function evalGuess() {
+    totalGuesses += 1 
+    gamerGuess = document.querySelector('#guess').value
+
+    const feedFront = document.querySelector('#feedFront')
+    if (gamerGuess == correctNumber) {
+        feedFront.innerText = 'You Win! now Get Off My SHIP!'
+        giveAward()
+    } else if (gamerGuess > correctNumber && gamerGuess < 16) {
+        feedFront.innerText = 'Too High! Walk the Plank!'
+    } else if (gamerGuess < correctNumber && gamerGuess > 0) {
+        feedFront.innerText = 'Too Low! Release the Kraken!'
+    } else {
+        feedFront.innerText = 'Please choose a number\n between 1 and 15 \n and try again!'
+        totalGuesses -= 1
+    }
+    document.querySelector('#attempts').innerText = totalGuesses    
+}
+
+//giving the function to the show results to the user.
+function giveAward() {
+    let imagePath = '#'
+    switch(totalGuesses) {
+        case 1:
+        case 2:
+        case 3: 
+            imagePath = 'images/JarDirt.gif'
+            break;
+        case 4: 
+        case 5:
+        case 6: 
+            imagePath = 'images/DavyJones.gif'
+        break; 
+        case 7:
+        case 8:
+        case 9:    
+            imagePath = 'images/JackSparrow.gif'
+        break;
+        default: 
+            imagePath = "images/no-ribbonArt.png"
+    }
+
+    // appending the child to create the results on the display of second game.
+    const awardImage = document.createElement('img') // this Creates an 'img' in html
+    awardImage.setAttribute('src', imagePath)
+    const ribbon = document.querySelector('#ribbon')
+    ribbon.appendChild(awardImage)
+}
+
+/*
+Note: There is a message in the console that will claim that "${pirateChoice.name}" shows as undefined.
+clearly this is something that can be ignored because it works on its first intention, not make for the others.
+meaning that it works for the pirates opponent the user can pick to play against.
+but it is not listed in anything else with the games part that is played. 
+However, everything else works smoothly as you can tell with out looking at the console.  it was intended that way.   
+*/

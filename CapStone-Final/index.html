@@ -51,6 +51,7 @@
             <img id = "picture">
             <br>
             <div class = "p">
+                <!--<p>Name: <span id = "pirateName"></span></p>-->
                 <p>Ships Name: <span id = "shipName"></span></p>
                 <p>Number of Crew: <span id = "crewNumber"></span></p>
                 <p>Killed:<span id = "killed"></span></p>
@@ -71,7 +72,7 @@
                         <img id="playerDice2" src="images/d1.png">
                         <!--<img id="playerDice3" src="images/d1.png">-->
                         <br>
-                        <button class="buttonId" onClick="throwDice()">Roll 'em!</button>
+                        <button id ="buttonId" onClick="throwDice()">Roll 'em!</button>
                     </div>
                 </article>
             
@@ -81,27 +82,44 @@
                         <img id="pirateDice1" src="images/e1.png">
                         <img id="pirateDice2" src="images/e1.png">
                         <!--<img id="pirateDice3" src="images/e1.png">-->
-                    <!--<div id="attempts"></div>-->
+                    </div>
                 </article>
-        
                 <article class="a3">
                     <h4>Feedback</h4>
                     <div id="feedback"></div>
                 </article>
-        
                 <article class="a4">
                     <h4>Award</h4>
                     <div class="diceColumn">
-                        <img id="message" src="images/goodluck.gif" alt="Good Luck!"/>
-                                                
+                        <img id="message" src="images/goodluck.gif" alt="Good Luck!"/>                     
                     </div>
-                   <!--<div id="ribbon"></div>-->
                 </article>
             </div>
+            <br>
             <p> Ok, Pirate!  if that did not work out so well for you, how about a quick guessing game then!</p>
-
-            
-            
+            <br>            
+            <br> 
+            <div class="articles">
+                <article class="a1">
+                    <h4>Guess my Number</h4>
+                    <div>
+                        <input id="guess" type="number" placeholder="number"/>
+                        <button id= "buttonId" onclick="evalGuess()">Guess</button>
+                    </div>
+                </article>
+                <article class="a2">
+                    <h4> Number of Tries</h4>
+                    <div id="attempts"></div>
+                </article>
+                <article class="a3">
+                    <h4>Guessing Feedback</h4>
+                    <div id="feedFront"></div>
+                </article>
+                <article class="a4">
+                    <h4>Guessing Award</h4>
+                    <div id="ribbon"></div>
+                </article>
+            </div>
         </main>
         <div class="keepOpen"></div>
         <footer>
