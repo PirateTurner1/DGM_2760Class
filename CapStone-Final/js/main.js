@@ -1,11 +1,10 @@
 // giving the top h1-h2 header.
 document.querySelector('header > h1').innerText = "CapStone!";
 document.querySelector('header > h2').innerText = "Final Project!";
-
 //giving the body an h1-h2 header.
 document.getElementById('head1').innerHTML = "Pirates Game!";
 document.getElementById('head2').innerHTML = "This page demonstrates:";
-
+//getting the json file info.
 async function getPirateData() {
     try {
         const response = await fetch('js/pirate.json')
@@ -15,7 +14,7 @@ async function getPirateData() {
         console.error(error)
     }
 }
-
+//setting the pirate info from json
 let pirateData = {}
 getPirateData().then(data => pirateData = data)
 console.log(pirateData)
@@ -29,7 +28,6 @@ function pirateInfo(event) {
     let pirateChoice = pirateData.pirates.find(pirate => {
         return event.target.id === pirate.name.toLowerCase()
     })
-
     //putting it on display but only works for this part not the rest.
     document.querySelector('#pirateName').textContent = `${pirateChoice.name} the Pirate`;
     document.querySelector('#shipName').textContent = `${pirateChoice.shipName}`;
@@ -37,7 +35,6 @@ function pirateInfo(event) {
     document.querySelector('#killed').textContent = `${pirateChoice.killed}`;
     document.querySelector('#cursed').textContent = `${pirateChoice.cursed[0] + pirateChoice.cursed[1]}`;
     document.querySelector('#playing').textContent = `${pirateChoice.playing}`;
-        
     let picturePlacement = document.querySelector('#picture');
     picturePlacement.src = `${pirateChoice.picture}`;
     let picture = document.querySelector('#picture');
@@ -66,17 +63,14 @@ function throwDice() {
     document.getElementById("playerDice2").alt = side_alt[rand2 - 1];
     document.getElementById("pirateDice1").alt = side_alt[rand3 - 1];
     document.getElementById("pirateDice2").alt = side_alt[rand4 - 1];
-
-
     who_won(rand1,rand2,rand3,rand4,);  
- 
 
     function who_won(rand1, rand2, rand3, rand4) {
         let player_points = rand1 + rand2 + 2;
         let pirate_points = rand3 + rand4 + 2;
-        let giffy = winner(player_points, pirate_points);
-        document.getElementById("message").src = "images/" + giffy;
-        document.getElementById("message").alt = giffy;
+        let gif = winner(player_points, pirate_points);
+        document.getElementById("message").src = "images/" + gif;
+        document.getElementById("message").alt = gif;
     }
 
     function winner(player, pirate) {
@@ -92,12 +86,11 @@ function throwDice() {
         }
     }
 }
-
+//setting random math for feedback answers
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor( Math.random() *(max - min + 1)) + min;
-    // The maximum is inclusive and so is the minimum also inclusive.
 }
 
 let fate = getRandomIntInclusive(1, 5);
@@ -108,7 +101,7 @@ let game = getRandomIntInclusive(1, 5);
 //giving the function to the show results to the user wins.
 function getUserMessage(user) {
     let message
-    switch (user) {  //this is a switch statement. 
+    switch (user) {  
         case 1:
             message = "SO, you think you've Won, do you?"
             break;
@@ -155,7 +148,7 @@ function getFortune(fate) {
 }
 const fateMessage = getFortune(fate);
 
-//giving the function to the show results to the pirates win.
+//giving the function to the show results to a game tie.
 function getGameMessage(game) {
     let message
     switch (fate) { 
@@ -180,14 +173,15 @@ function getGameMessage(game) {
 }
 const gameMessage = getGameMessage(game);
 
-let correctNumber = Math.floor(Math.random() * 15 + 1)
+//second game used to help fill in requirements all because, the first could not have an appended element to work properly.
+let correctNumber = Math.floor(Math.random() * 20 + 1)
 console.log(`The correctNumber is ${correctNumber}`)
 
 let guessed = false
 let totalGuesses = 0
 let gamerGuess = 0
 
-// if, else statement to give feedback to the user. 
+// if, else statement to give feedback to the user for the guessing game. 
 function evalGuess() {
     totalGuesses += 1 
     gamerGuess = document.querySelector('#guess').value
@@ -207,7 +201,7 @@ function evalGuess() {
     document.querySelector('#attempts').innerText = totalGuesses    
 }
 
-//giving the function to the show results to the user.
+//giving the function to the show results to the user for the guessing game.
 function giveAward() {
     let imagePath = '#'
     switch(totalGuesses) {
@@ -231,16 +225,18 @@ function giveAward() {
     }
 
     // appending the child to create the results on the display of second game.
-    const awardImage = document.createElement('img') // this Creates an 'img' in html
+    const awardImage = document.createElement('img') 
     awardImage.setAttribute('src', imagePath)
     const ribbon = document.querySelector('#ribbon')
     ribbon.appendChild(awardImage)
 }
 
 /*
-Note: There is a message in the console that will claim that "${pirateChoice.name}" shows as undefined.
-clearly this is something that can be ignored because it works on its first intention, not make for the others.
-meaning that it works for the pirates opponent the user can pick to play against.
+Note: There is a message in the console that will claim that a name or "${pirateChoice.name}" shows as undefined.
+clearly, this is something that can be ignored because it works on its first intention.
+The unfortunate thing is after this function, the computer thinks it applies to the rest of the listed functions.
+but it was not intended or listed in other places.
+This means that it works for the pirates opponent the user can pick in order to pretending they are play against a pirate.
 but it is not listed in anything else with the games part that is played. 
-However, everything else works smoothly as you can tell with out looking at the console.  it was intended that way.   
+However, everything else works smoothly as you can tell with out looking at the console.  It was intended that way.   
 */

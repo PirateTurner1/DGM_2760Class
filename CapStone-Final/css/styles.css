@@ -144,12 +144,19 @@ p {
     border-radius: 3rem;
     padding: 7px;
     padding-left: 15px;
+    
     font-size: 14px;
     font-weight: bold;
     background-color:  #00fc3f;
-    margin-left: 15px;
-    margin-bottom: 5px;
+    
     margin-right: 280px;
+}
+
+.p p span {
+    padding-right: 20px;
+    padding-left: 5px;
+    margin-left: 5px;
+
 }
 
 h3{
