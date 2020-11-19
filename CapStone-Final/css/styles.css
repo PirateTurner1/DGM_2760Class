@@ -235,9 +235,9 @@ main article.a1 button {
 }
 
 #playerDice1, #playerDice2, #pirateDice1, #pirateDice2 { 
-    height: 50px;
-    width:50px;
-    padding-left: 6px;
+    height: 70px;
+    width:70px;
+    padding: 5px;
 }
 
 
