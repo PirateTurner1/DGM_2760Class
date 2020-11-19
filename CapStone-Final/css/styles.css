@@ -306,14 +306,13 @@ article.a4 h4 {
 
 .diceColumn {
     align-content: center;
-    padding: 1em;
     margin-right: 10px;
     height: 160px;
 }
 
 img {
-    height: 170px;
-    width: 170px;
+    height: 175px;
+    width: 175px;
     align-content: center;
     padding: 1em;
     margin-right: 10px;
@@ -321,17 +320,18 @@ img {
     
 }
 main #message {
-    height: 150px;
-    width:165px;
+    height: 160px;
+    width:190px;
     padding-bottom: 15px;
     padding-left: 16px;
+    margin-bottom: 10px;
 }
 
 main #ribbon {
     height: 160px;
     width:185px;
     padding-bottom: 15px;
-    padding-left: 16px;
+    padding-left: 10px;
 
 }
 
