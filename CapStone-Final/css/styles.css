@@ -173,7 +173,7 @@ h3{
 }
 
 main article {
-    width: 25%;
+    width: 30%;
 }
 
 main article div {
@@ -184,7 +184,7 @@ main article div {
 }
 
 main article.a1 {
-    width: 145px;
+    width: 195px;
     background-color: rgb(163, 245, 163);
     margin-bottom: 0 auto;
     
@@ -220,30 +220,13 @@ main article.a1 button {
 .diceRow {
     align-content: center;
     padding: 1em;
+    width: 197px;
    
-}/*
-.dice1 {
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 150px;
-  
 }
 
-.dice2 {
-    padding-left: 10px;
-    padding-right:10px;
-    height: 150px;
-    
-}*/
-/*  
-myDice {
-    height: 80px;
-    width:80px;
-} */
 
 main article.a2 {
-    width: 145px;
+    width: 195px;
     background-color: rgb(163, 245, 163);
 }
 
@@ -257,17 +240,11 @@ article.a2 h4 {
 
 main article.a2 div {
     text-align: center;
-    width: 150px;
-}
-
-main #attempts {
-    font-size: 2rem; 
-    color:black;
-    padding-right: 90px;
+    width: 195px;
 }
 
 main article.a3 {
-    width: 40%;
+    width: 35%;
     background-color: rgb(163, 245, 163);
 }
 
@@ -279,7 +256,10 @@ article.a3 h4 {
 }
 
 main #feedback {
-    font-size: 1.75rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    
+    font-size: 1.5rem;
     color:black;
 }
 
@@ -319,7 +299,7 @@ div.keepOpen {
 } 
 
 footer{
-    height: 70px;
+    height: 100px;
     background-color:#552d05;
     font-size: 14px;
     text-align: center;

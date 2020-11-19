@@ -44,6 +44,12 @@ function pirateInfo(event) {
     let picture = document.querySelector('#picture')
 }
 
+/*
+Note:  there is a message that states that "${pirateChoice.name}" shows as undefined.
+but only as the game in the next part is played from here down.
+However, everything else works smoothly.  
+*/
+
 //giving the dice info.
 const sides = ["d1.png", "d2.png", "d3.png", "d4.png", "d5.png", "d6.png"];
 const side_alt = ["roll: 1", "roll: 2", "roll: 3", "roll: 4", "roll: 5", "roll: 6"];
@@ -69,7 +75,7 @@ function throwDice() {
     document.getElementById("pirateDice2").alt = side_alt[rand4 - 1];
 
 
-    who_won(rand1,rand2,rand3,rand4);
+    who_won(rand1,rand2,rand3,rand4,);  
  
 
     function who_won(rand1, rand2, rand3, rand4) {
@@ -82,10 +88,10 @@ function throwDice() {
 
     function winner(player, pirate) {
         if (player > pirate) {
-            document.querySelector('#feedback').innerHTML = `${userMessage}`;
+            document.querySelector('#feedback').innerHTML = `${userMessage}`;// you win!
             return "jarDirt.gif";
         }else if (pirate == player) {
-            document.querySelector('#feedback').innerHTML = 'its a draw, try again!';
+            document.querySelector('#feedback').innerHTML = `${gameMessage}`; //its a tie!
             return "JackSparrow.gif"
         }else {
             document.querySelector('#feedback').innerHTML = `${fateMessage}`; //${pirateChoice.name} this keeps showing undefined...
@@ -104,7 +110,7 @@ function getRandomIntInclusive(min, max) {
 
 let fate = getRandomIntInclusive(1, 5)
 let user = getRandomIntInclusive(1, 5)
-let theGameTie = getRandomIntInclusive(1, 5)
+let game = getRandomIntInclusive(1, 5)
 
 
 //giving the function to the show results to the user wins.
@@ -126,7 +132,6 @@ function getUserMessage(user) {
         case 5:
             message = 'I will make you pay for what you did to me!'
             break;
-      
     }
     return message
 
@@ -138,26 +143,47 @@ function getFortune(fate) {
     let message
     switch (fate) { 
         case 1:
-            message = 'Your a LIAR and you will spend eternity on my ship!'
+            message = "You're a LIAR and you will spend eternity on my ship!"
             break;
         case 2:
             message = 'You are without a doubt the worst pirate I’ve ever heard of.'
             break;
         case 3:
-            message = "You better start believing in ghost stories, you're in one!"
+            message = "You best start believing in ghost stories, you're in one!"
             break;
         case 4:
             message = "You're off the edge of the map, mate. Here there be monsters. "
             break;
         case 5:
-            message = 'Nobody move! I dropped me brain!!'
+            message = 'what are you?...  DEATH! You Loose!'
             break;
-      
     }
     return message
 
 }
 const fateMessage = getFortune(fate);
-//const fateRevealed = `Message: ${userMessage}`; //${day}, you will ${fateMessage}`;
-//document.querySelector('#feedback').innerText = fateRevealed;
 
+//giving the function to the show results to the pirates win.
+function getGameMessage(game) {
+    let message
+    switch (fate) { 
+        case 1:
+            message = 'Did everyone see that? Because I will not be doing it again.'
+            break;
+        case 2:
+            message = 'If you were waiting for the opportune moment, that was it.'
+            break;
+        case 3:
+            message = "Take what ye can! Give nothin' back!"
+            break;
+        case 4:
+            message = "Capt'n I wish to report a mutiny, I can name fingers and point names!"
+            break;
+        case 5:
+            message = 'Nobody move! I dropped me brain!!'
+            break;
+    }
+    return message
+
+}
+const gameMessage = getGameMessage(game);
