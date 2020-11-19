@@ -221,7 +221,7 @@ function giveAward() {
             imagePath = 'images/JackSparrow.gif'
         break;
         default: 
-            imagePath = "images/no-ribbonArt.png"
+            imagePath = "images/jackDies.gif"
     }
 
     // appending the child to create the results on the display of second game.

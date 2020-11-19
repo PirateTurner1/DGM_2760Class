@@ -126,6 +126,7 @@ p {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
 .pirates a:hover {
     color: rgb(251, 255, 21);
     background-color:#00fc3f;
@@ -134,8 +135,7 @@ p {
 #picture {
     width: 350px;
     height: 224px;
-    float:left;
-    
+    float:left;  
 }
 
 .p p {
@@ -144,11 +144,9 @@ p {
     border-radius: 3rem;
     padding: 7px;
     padding-left: 15px;
-    
     font-size: 14px;
     font-weight: bold;
     background-color:  #00fc3f;
-    
     margin-right: 280px;
 }
 
@@ -190,9 +188,7 @@ main article div {
 main article.a1 {
     width: 195px;
     background-color: rgb(163, 245, 163);
-    margin-bottom: 0 auto;
-    
-    
+    margin-bottom: 0 auto;  
 }
 
 main article.a1 div {
@@ -230,7 +226,6 @@ main article.a1 button {
     font-size: 16px;
     margin-left:5px; 
     margin-top:5px; 
-     
 }
 
 .diceRow {
@@ -238,7 +233,6 @@ main article.a1 button {
     align-items: center;
     padding: 1em;
     width: 197px;
-   
 }
 
 #playerDice1, #playerDice2, #pirateDice1, #pirateDice2 { 
@@ -246,7 +240,6 @@ main article.a1 button {
     width:70px;
     padding: 5px;
 }
-
 
 main article.a2 {
     width: 195px;
@@ -299,7 +292,6 @@ main #feedFront {
 
 main article.a4 {
     width: 200px;
-   
     background-color: rgb(163, 245, 163);
 }
 
@@ -323,9 +315,9 @@ img {
     align-content: center;
     padding: 1em;
     margin-right: 10px;
-    height: 160px;
-    
+    height: 160px; 
 }
+
 main #message {
     height: 160px;
     width:190px;
@@ -339,7 +331,6 @@ main #ribbon {
     width:185px;
     padding-bottom: 15px;
     padding-left: 10px;
-
 }
 
 div.keepOpen { 
