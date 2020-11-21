@@ -190,12 +190,12 @@ function evalGuess() {
     if (gamerGuess == correctNumber) {
         feedFront.innerText = 'You Win! now Get Off My SHIP!'
         giveAward()
-    } else if (gamerGuess > correctNumber && gamerGuess < 16) {
+    } else if (gamerGuess > correctNumber && gamerGuess < 21) {
         feedFront.innerText = 'Too High! Walk the Plank!'
     } else if (gamerGuess < correctNumber && gamerGuess > 0) {
         feedFront.innerText = 'Too Low! Release the Kraken!'
     } else {
-        feedFront.innerText = 'Please choose a number\n between 1 and 15 \n and try again!'
+        feedFront.innerText = 'Please choose a number\n between 1 and 20 \n and try again!'
         totalGuesses -= 1
     }
     document.querySelector('#attempts').innerText = totalGuesses    
