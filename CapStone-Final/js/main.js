@@ -45,7 +45,7 @@ const sides = ["d1.png", "d2.png", "d3.png", "d4.png", "d5.png", "d6.png"];
 const side_alt = ["roll: 1", "roll: 2", "roll: 3", "roll: 4", "roll: 5", "roll: 6"];
 
 //generating random dice role
-function throwDice() {
+function throwDice() {  
     //create a random integer between 1 and 6
     var rand1 = Math.floor(Math.random()*6) + 1;
     var rand2 = Math.floor(Math.random()*6) + 1;
@@ -81,7 +81,7 @@ function throwDice() {
             document.querySelector('#feedback').innerHTML = `${gameMessage}`; //its a tie!
             return "JackSparrow.gif"
         }else {
-            document.querySelector('#feedback').innerHTML = `${fateMessage}`; //${pirateChoice.name} this keeps showing undefined...
+            document.querySelector('#feedback').innerHTML = `${fateMessage}`; //**see message at bottom. 
             return "DavyJones.gif"
         }
     }
