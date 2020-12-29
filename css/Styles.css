@@ -28,7 +28,7 @@ header {
     justify-content: center;
     align-items: left;
     width: 1080px;
-    height: 260px;
+    height: 250px;
     background-image: url("../images/codeLearningImage.jpg");
     background-repeat: no-repeat;
     background-size: 1030px 260px; 
@@ -78,13 +78,22 @@ h2 {
     font-size: 26px;
 }
 
+#pageName {
+    display: block;
+    height: 1650px;
+    background-color:rgb(231, 231, 231);
+    clear: both;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-bottom: 150px;
+}
 
 .pirates {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     font-size: 16px;
-    width: 1029px;
+    width: 970px;
     max-height: 40px;
     background-color: #00fc3f;
     color: black;
@@ -99,8 +108,8 @@ h2 {
     font-weight: bold;
     border-left: 2px solid rgb(231, 231, 231);
     border-right: 2px solid rgb(231, 231, 231); 
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 24px;
+    padding-right: 23px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
@@ -110,15 +119,7 @@ h2 {
     background-color:#00fc3f;
 }
 
-#pageName {
-    display: block;
-    height: 1650px;
-    background-color:rgb(231, 231, 231);
-    clear: both;
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-bottom: 150px;
-}
+
 
 footer{
     background-color:#593C1F;
