@@ -10,59 +10,61 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="company"></h1>
-        <h2 id="slogan"></h2>
-    </header>
-    <main id="pageName">
-        <h1>Its a Number Guessing Game!</h1>
-        
-        <h2>What I have learned is:</h2>
-        <ul class = "objective">
-            <li>I can use JavaScript to insert text into an HTML element.</li>
-            <li>I can implement functions from javascript.</li>
-            <li>I can use an inner text in java to provide the user feedback.</li>    
-            <li>I can implement a switch statement.</li>
-            <li>I can dynamically load in a graphic.</li>
-            <li>I can also create and append an image element from javascript.</li>
-        </ul>
-        <h2>Instructions</h2>
-        <p id="instructions">In this game you get to try and guess a number between 1 and 15 in as few tries as possible.<br/>
+    <div id="wrapper">
+        <header>
+            <h1 id="company"></h1>
+            <h2 id="slogan"></h2>
+        </header>
+        <main id="pageName">
+            <h1>Its a Number Guessing Game!</h1>
+            <br>
+            <h2>What I have learned is:</h2>
+            <ul class = "objective">
+                <li>I can use JavaScript to insert text into an HTML element.</li>
+                <li>I can implement functions from javascript.</li>
+                <li>I can use an inner text in java to provide the user feedback.</li>    
+                <li>I can implement a switch statement.</li>
+                <li>I can dynamically load in a graphic.</li>
+                <li>I can also create and append an image element from javascript.</li>
+            </ul>
+            <h2>Instructions</h2>
+            <p id="instructions">In this game you get to try and guess a number between 1 and 15 in as few tries as possible.<br/>
             you will be awarded a ribbon for your skills if you have the right number in the least amount of tries, so good luck! <br/>
-        if you would like to play again, all you have to do is refresh the page. be warned! the numbers will change.  </p>
-        </br>
+            if you would like to play again, all you have to do is refresh the page. be warned! the numbers will change.  </p>
+            </br>
 
-        <div class="articles">
-            <article class="a1">
-                <h2>Play</h2>
-                <div>
-                    <input id="guess" type="number" placeholder="number"/>
-                    <button id= "buttonId" onclick="evalGuess()">Guess</button>
-                    <!-- <p id="disable"></p> -->
-                </div>
-            </article>
+            <div class="articles">
+                <article class="a1">
+                    <h2>Play</h2>
+                    <div>
+                        <input id="guess" type="number" placeholder="number"/>
+                        <button id= "buttonId" onclick="evalGuess()">Guess</button>
+                        <!-- <p id="disable"></p> -->
+                    </div>
+                </article>
             
-            <article class="a2">
-                <h2>Tries</h2>
-                <div id="attempts"></div>
-            </article>
+                <article class="a2">
+                    <h2>Tries</h2>
+                    <div id="attempts"></div>
+                </article>
     
-            <article class="a3">
-                <h2>Feedback</h2>
-                <div id="feedback"></div>
-            </article>
+                <article class="a3">
+                    <h2>Feedback</h2>
+                    <div id="feedback"></div>
+                </article>
     
-            <article class="a4">
-                <h2>Award</h2>
-                <div id="ribbon"></div>
-            </article>
-        </div>
-    </main>
-    <div class="keepOpen"></div>
-    <footer>
-        <p>&#64;UVU_DGM_2760 &#169; Austin Turner. </p>
-        <p>For educational purposes only by the "Pirates design, inc."</p>
-    </footer>
+                <article class="a4">
+                    <h2>Award</h2>
+                    <div id="ribbon"></div>
+                </article>
+            </div>
+        </main>
+        <div class="keepOpen"></div>
+        <footer>
+            <p>&#64;UVU_DGM_2760 &#169; Austin Turner. </p>
+            <p>For educational purposes only by the "Pirates design, inc."</p>
+        </footer>
+    </div>
 </body>
 <script type="text/javascript" src="js/main.js"></script>
 </html>
