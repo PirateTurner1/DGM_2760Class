@@ -31,14 +31,15 @@
             
             <h2>Instructions</h2>
             <p id="instructions">In this game you get to pick our pirate that you wish to play against.  
-                Then roll the dice to try and out do your opponent with your given two dice.  The goal is to role the higher number in order to defeat your pirate opponent. 
-                You will be awarded with an action like picture for your luck of the draw.  
-                Followed by a quote from the movies. Can you guess which one tells you that you win or loose?
-                If you would like to play the dice game again, all you have to do is keep pressing the button for the dice game to try and get a different outcome and picture or phrase.  
-                <br/>If that is not enough for you, there is a second game that is a guessing game from 1-20.  
-                For this one, the goal is to guess the right number in as few tries as possible.  you may also get the same pictures as a result for your reward. 
-                If you want to play again refresh the page. Be  Ye warned Matey! The correct number will change and the whole thing clears with the dice game and the charactor you chose. <br/> 
+            Then roll the dice to try and out do your opponent with your given two dice.  The goal is to role the higher number in order to defeat your pirate opponent. 
+            You will be awarded with an action like picture for your luck of the draw.  
+            Followed by a quote from the movies. Can you guess which one tells you that you win or loose?
+            If you would like to play the dice game again, all you have to do is keep pressing the button for the dice game to try and get a different outcome and picture or phrase.  
+            <br/>If that is not enough for you, there is a second game that is a guessing game from 1-20.  
+            For this one, the goal is to guess the right number in as few tries as possible.  you may also get the same pictures as a result for your reward. 
+            If you want to play again refresh the page. Be  Ye warned Matey! The correct number will change and the whole thing clears with the dice game and the charactor you chose. <br/> 
             </p>
+        
             <h2 class = "player">Select Your Opponent!</h2>
             <ul class = "pirates">
                 <li><a href = "#" id = "turner">William Turner</a></li>
@@ -73,7 +74,7 @@
                         <img id="playerDice2" src="images/d1.png">
                         <!--<img id="playerDice3" src="images/d1.png">-->
                         <br>
-                        <button id ="buttonId1" onClick="throwDice()">Roll 'em!</button>
+                        <button id ="buttonId" onClick="throwDice()">Roll 'em!</button>
                     </div>
                 </article>
             
@@ -97,7 +98,7 @@
                 </article>
             </div>
             <br>
-            <p> Ok, Pirate!  if that was not enough or it did not work out so well for you, how about a quick guessing game then!</p>
+            <p> Ok, Pirate!  if that was not enough or it did not work out so well for you, how about a quick guessing game then from 1-20!</p>
             <br>            
             <br> 
             <div class="articles">
@@ -105,7 +106,7 @@
                     <h4>Guess my Number</h4>
                     <div>
                         <input id="guess" type="number" placeholder="number"/>
-                        <button id= "buttonId2" onclick="evalGuess()">Guess</button>
+                        <button id= "buttonId" onclick="evalGuess()">Guess</button>
                     </div>
                 </article>
                 <article class="a2">
